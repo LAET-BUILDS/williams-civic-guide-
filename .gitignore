@@ -1,0 +1,7 @@
+node_modules/
+.venv/
+dist/
+_raw/
+_shots/
+dist-external-links.txt
+_themes-preview/

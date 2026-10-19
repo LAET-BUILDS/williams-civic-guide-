@@ -1,0 +1,24 @@
+{
+ "_help": "Add one object per meeting to 'meetings'. The home page shows the first meeting whose date is today or later. Dates are YYYY-MM-DD; time is 24-hour HH:MM. Each agenda item needs at least one source id from sources.json. status: V (verified in the packet) or U (unverified). See UPDATING.md.",
+ "meetings": [
+  {
+   "date": "2026-10-21",
+   "time": "18:00",
+   "time_label": "6:00 PM",
+   "type": "regular",
+   "place": "Council Chambers, City Hall, 810 E Street, Williams, CA 95987",
+   "calc_source": "city-council-page",
+   "calc_note": {"en": "Date calculated from the City's “third Wednesday of each month” schedule.", "es": "Fecha calculada a partir del calendario de la Ciudad: “tercer miércoles de cada mes”."},
+   "agenda_source": "packet-2026-10-21",
+   "agenda_note": {"en": "The agenda in the City's October 21, 2026 packet (downloaded Oct 16) lists the same date, 6:00 PM, open session.", "es": "La agenda del paquete del 21 de octubre de 2026 (descargado el 16 de oct.) indica la misma fecha, 6:00 PM, sesión abierta."},
+   "agenda_caveat": {"en": "Agendas can be revised up to 72 hours before a regular meeting. Item numbers are from the posted packet. Public comment on non-agenda items is near the start (item D).", "es": "Las agendas pueden revisarse hasta 72 horas antes de una reunión ordinaria. Los números de punto son del paquete publicado. Los comentarios públicos sobre temas fuera de la agenda van al principio (punto D)."},
+   "items": [
+    {"en": "Item 18: City Manager employment contract amendment. Base salary $175,000 to $178,500; $500/month vehicle allowance; term to Feb 18, 2031; severance rising from 3 to up to 6 months depending on years of service. Staff report lists the fiscal impact as $6,500 a year.", "es": "Punto 18: enmienda al contrato del Administrador Municipal. Salario base de $175,000 a $178,500; $500 al mes para vehículo; plazo hasta el 18 de feb. de 2031; indemnización que sube de 3 hasta 6 meses según antigüedad. El informe indica un impacto fiscal de $6,500 al año.", "status": "V", "sources": ["packet-2026-10-21"]},
+    {"en": "Item 15: Award the E Street water/sewer improvement contract to Tungsten Engineering Contractors, LLC for $1,472,074, plus a 10% contingency (not to exceed $1,619,281).", "es": "Punto 15: adjudicar el contrato de mejoras de agua/alcantarillado de la Calle E a Tungsten Engineering Contractors, LLC por $1,472,074, más 10% de contingencia (máximo $1,619,281).", "status": "V", "sources": ["packet-2026-10-21"]},
+    {"en": "Items 12-13: Two Caltrans HSIP safety contracts: intersection improvements to St. Francis Electric, LLC ($287,107) and pedestrian improvements at 8th & F Streets ($258,974).", "es": "Puntos 12-13: dos contratos de seguridad HSIP de Caltrans: mejoras de intersecciones a St. Francis Electric, LLC ($287,107) y mejoras peatonales en las calles 8 y F ($258,974).", "status": "V", "sources": ["packet-2026-10-21"]},
+    {"en": "Item 16: Resolution 26-40, business license and building fees to rise each year by CPI.", "es": "Punto 16: Resolución 26-40, las tarifas de licencias comerciales y de construcción subirían cada año según el IPC.", "status": "V", "sources": ["packet-2026-10-21"]},
+    {"en": "Item 5 (public hearing): first reading of Ordinance 282-26, streamlined permits for electric-vehicle charging stations.", "es": "Punto 5 (audiencia pública): primera lectura de la Ordenanza 282-26, permisos simplificados para estaciones de carga de vehículos eléctricos.", "status": "V", "sources": ["packet-2026-10-21"]}
+   ]
+  }
+ ]
+}
