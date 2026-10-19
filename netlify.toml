@@ -1,0 +1,10 @@
+# Netlify settings (only used if you choose Netlify). Nothing is deployed until you connect a site.
+[build]
+  command = "npm ci && npm run build"
+  publish = "dist"
+[build.environment]
+  NODE_VERSION = "20"
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
