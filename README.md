@@ -1,5 +1,7 @@
 # Williams Civic Guide (unofficial): prototype v3
 
+Live site: https://laet-builds.github.io/williams-civic-guide-/
+
 An **unofficial, resident-run** civic education site for Williams, California (Colusa County). It is a short
 course: learn the **three layers of law** (federal, state, city), then use **The Method** to check any section
 of the Williams Municipal Code against the laws above it. English and Spanish.
