@@ -1,0 +1,816 @@
+[
+ {
+  "lang": "en",
+  "path": "agenda-watch/",
+  "title": "Agenda Watch",
+  "updated": "2026-10-22"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-1-criminal-justice/",
+  "title": "California Article I (part 3): Criminal justice rights",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-1-liberty-equality/",
+  "title": "California Article I (part 1): Liberty, privacy and equality",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-1-property-and-more/",
+  "title": "California Article I (part 4): Property, fishing, and the full section map",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-1-speech-religion/",
+  "title": "California Article I (part 2): Speech, petition, open government and religion",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-11/",
+  "title": "California Article XI: Local government, and why Williams can regulate at all",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-12/",
+  "title": "California Article XII: Public utilities",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-13/",
+  "title": "California Article XIII: Taxation, the base rules",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-13a/",
+  "title": "California Article XIII A: Proposition 13, the 1% cap and two-thirds votes",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-13b/",
+  "title": "California Article XIII B: The spending limit and state mandates",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-13c/",
+  "title": "California Article XIII C: Voter approval for local taxes (Proposition 218)",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-13d/",
+  "title": "California Article XIII D: Assessments and property-related fees (Proposition 218)",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-16/",
+  "title": "California Article XVI: Public finance, debt limits, and no gifts of public money",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-18/",
+  "title": "California Article XVIII: Amending and revising the Constitution",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-2/",
+  "title": "California Article II: Voting, initiative, referendum and recall",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-20/",
+  "title": "California Article XX: Miscellaneous, including the oath every city employee takes",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-3/",
+  "title": "California Article III: The State, separation of powers, and who may refuse a statute",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-4/",
+  "title": "California Article IV: The Legislature",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-5/",
+  "title": "California Article V: The Executive",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-6/",
+  "title": "California Article VI: The Judiciary",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/article-7/",
+  "title": "California Article VII: Public officers and employees",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/articles-9-10/",
+  "title": "California Articles IX, X, X A and X B: Education and water",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/ca/other-articles/",
+  "title": "California's other articles: labor, interest, transportation money, redistricting, housing, stem cells, and repealed articles",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/california/",
+  "title": "The California Constitution: overview and course map",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/cases/",
+  "title": "The cases behind the rights, and where to read the originals",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/how-it-fits/incorporation/",
+  "title": "Incorporation: how the Bill of Rights came to bind the City of Williams",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/how-it-fits/state-and-city/",
+  "title": "State law over city law: what a general law city can and can't do",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/how-it-fits/statutes/",
+  "title": "From constitution to statute: the laws that carry your rights into City Hall",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/how-it-fits/supremacy/",
+  "title": "Supremacy: which law wins when federal, state and city law collide",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/how-it-fits/wmc-path/",
+  "title": "A worked path: from a Williams code section up to both constitutions",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/",
+  "title": "Constitutions: how your rights reach Williams",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-1/",
+  "title": "First Amendment: Religion, speech, press, assembly and petition",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-10/",
+  "title": "Tenth Amendment: Powers reserved to the states and the people",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-11/",
+  "title": "Eleventh Amendment: Suits against states",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-12/",
+  "title": "Twelfth Amendment: Separate electoral votes for President and Vice President",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-13/",
+  "title": "Thirteenth Amendment: Abolition of slavery",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-14/",
+  "title": "Fourteenth Amendment: Citizenship, due process and equal protection",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-15/",
+  "title": "Fifteenth Amendment: No race discrimination in voting",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-16/",
+  "title": "Sixteenth Amendment: Federal income tax",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-17/",
+  "title": "Seventeenth Amendment: Popular election of senators",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-18/",
+  "title": "Eighteenth Amendment: Prohibition (repealed)",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-19/",
+  "title": "Nineteenth Amendment: Women's suffrage",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-2/",
+  "title": "Second Amendment: The right to keep and bear arms",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-20/",
+  "title": "Twentieth Amendment: Terms begin in January",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-21/",
+  "title": "Twenty-first Amendment: Repeal of Prohibition",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-22/",
+  "title": "Twenty-second Amendment: Presidential term limits",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-23/",
+  "title": "Twenty-third Amendment: Electoral votes for Washington, D.C.",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-24/",
+  "title": "Twenty-fourth Amendment: No poll taxes in federal elections",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-25/",
+  "title": "Twenty-fifth Amendment: Presidential succession and disability",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-26/",
+  "title": "Twenty-sixth Amendment: Voting at 18",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-27/",
+  "title": "Twenty-seventh Amendment: Congressional pay changes wait for an election",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-3/",
+  "title": "Third Amendment: No quartering of soldiers",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-4/",
+  "title": "Fourth Amendment: Searches, seizures and warrants",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-5/",
+  "title": "Fifth Amendment: Grand juries, double jeopardy, self-incrimination, due process and takings",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-6/",
+  "title": "Sixth Amendment: Rights of the accused at trial",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-7/",
+  "title": "Seventh Amendment: Civil jury trial",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-8/",
+  "title": "Eighth Amendment: Bail, fines and punishment",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/amendment-9/",
+  "title": "Ninth Amendment: Rights not listed are still rights",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/article-1-congress/",
+  "title": "Article I, Sections 1–7: How Congress is built and how a bill becomes law",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/article-1-limits/",
+  "title": "Article I, Sections 9–10: What Congress and the states may not do",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/article-1-section-8/",
+  "title": "Article I, Section 8: The powers of Congress",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/article-2/",
+  "title": "Article II: The President and the executive branch",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/article-3/",
+  "title": "Article III: The federal courts",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/article-4/",
+  "title": "Article IV: How the states treat each other",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/article-5/",
+  "title": "Article V: How the Constitution is amended",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/article-6/",
+  "title": "Article VI: The supreme law of the land",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/article-7/",
+  "title": "Article VII: Ratification, and how the Constitution took effect",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us/preamble/",
+  "title": "The Preamble: who creates the government, and why",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/us-constitution/",
+  "title": "The U.S. Constitution: course overview",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/williams/",
+  "title": "How the constitutions reach the Williams code",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "documents/",
+  "title": "Founding documents",
+  "updated": "2026-10-18"
+ },
+ {
+  "lang": "en",
+  "path": "glossary/",
+  "title": "Glossary",
+  "updated": "2026-10-18"
+ },
+ {
+  "lang": "en",
+  "path": "",
+  "title": "Home",
+  "updated": "2026-10-18"
+ },
+ {
+  "lang": "en",
+  "path": "layers/",
+  "title": "Three layers of law",
+  "updated": "2026-10-18"
+ },
+ {
+  "lang": "en",
+  "path": "method/",
+  "title": "The Method",
+  "updated": "2026-10-18"
+ },
+ {
+  "lang": "en",
+  "path": "reference/",
+  "title": "Reference",
+  "updated": "2026-10-18"
+ },
+ {
+  "lang": "en",
+  "path": "take-part/brown-act/",
+  "title": "Brown Act (open meetings)",
+  "updated": "2026-10-18"
+ },
+ {
+  "lang": "en",
+  "path": "take-part/",
+  "title": "Take part",
+  "updated": "2026-10-18"
+ },
+ {
+  "lang": "en",
+  "path": "take-part/public-records-act/",
+  "title": "California Public Records Act",
+  "updated": "2026-10-18"
+ },
+ {
+  "lang": "en",
+  "path": "who-decides/",
+  "title": "Who decides? Where the Williams code gives officials a choice over you",
+  "updated": "2026-10-22"
+ },
+ {
+  "lang": "es",
+  "path": "es/agenda-watch/",
+  "title": "Vigilancia de agendas",
+  "updated": "2026-10-22",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/california/",
+  "title": "La Constitución de California: derechos, poder del pueblo y límites al dinero local",
+  "updated": "2026-10-23",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/cases/",
+  "title": "Los casos detrás de los derechos y dónde leer los originales",
+  "updated": "2026-10-23",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/",
+  "title": "Las constituciones: cómo llegan sus derechos a Williams",
+  "updated": "2026-10-23",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us-constitution/",
+  "title": "La Constitución de EE. UU., artículo por artículo",
+  "updated": "2026-10-23",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/williams/",
+  "title": "Cómo llegan las constituciones al código de Williams",
+  "updated": "2026-10-23",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/",
+  "title": "Documentos fundamentales",
+  "updated": "2026-10-18",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/glossary/",
+  "title": "Glosario",
+  "updated": "2026-10-18",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/",
+  "title": "Inicio",
+  "updated": "2026-10-18",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/layers/",
+  "title": "Tres niveles de la ley",
+  "updated": "2026-10-18",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/method/",
+  "title": "El Método",
+  "updated": "2026-10-18",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/reference/",
+  "title": "Referencias",
+  "updated": "2026-10-18",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/take-part/brown-act/",
+  "title": "Ley Brown (reuniones abiertas)",
+  "updated": "2026-10-18",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/take-part/",
+  "title": "Participe",
+  "updated": "2026-10-18",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/take-part/public-records-act/",
+  "title": "Ley de Registros Públicos de California",
+  "updated": "2026-10-18",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/who-decides/",
+  "title": "¿Quién decide? Dónde el código de Williams les da a los funcionarios poder de decidir sobre usted",
+  "updated": "2026-10-22",
+  "review": "pending"
+ },
+ {
+  "lang": "en",
+  "path": "documents/us-constitution/",
+  "title": "U.S. Constitution",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-i/",
+  "title": "CA Constitution Art. I",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-ii/",
+  "title": "CA Constitution Art. II",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-iii/",
+  "title": "CA Constitution Art. III",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-iv/",
+  "title": "CA Constitution Art. IV",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-v/",
+  "title": "CA Constitution Art. V",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-vi/",
+  "title": "CA Constitution Art. VI",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-vii/",
+  "title": "CA Constitution Art. VII",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-ix/",
+  "title": "CA Constitution Art. IX",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-x/",
+  "title": "CA Constitution Art. X",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-x-a/",
+  "title": "CA Constitution Art. X A",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-x-b/",
+  "title": "CA Constitution Art. X B",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xi/",
+  "title": "CA Constitution Art. XI",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xii/",
+  "title": "CA Constitution Art. XII",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xiii/",
+  "title": "CA Constitution Art. XIII",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xiii-a/",
+  "title": "CA Constitution Art. XIII A",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xiii-b/",
+  "title": "CA Constitution Art. XIII B",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xiii-c/",
+  "title": "CA Constitution Art. XIII C",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xiii-d/",
+  "title": "CA Constitution Art. XIII D",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xiv/",
+  "title": "CA Constitution Art. XIV",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xv/",
+  "title": "CA Constitution Art. XV",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xvi/",
+  "title": "CA Constitution Art. XVI",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xviii/",
+  "title": "CA Constitution Art. XVIII",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xix/",
+  "title": "CA Constitution Art. XIX",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xix-a/",
+  "title": "CA Constitution Art. XIX A",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xix-b/",
+  "title": "CA Constitution Art. XIX B",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xix-c/",
+  "title": "CA Constitution Art. XIX C",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xix-d/",
+  "title": "CA Constitution Art. XIX D",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xx/",
+  "title": "CA Constitution Art. XX",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xxi/",
+  "title": "CA Constitution Art. XXI",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xxii/",
+  "title": "CA Constitution Art. XXII",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xxxiv/",
+  "title": "CA Constitution Art. XXXIV",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/article-xxxv/",
+  "title": "CA Constitution Art. XXXV",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "documents/ca-constitution/",
+  "title": "California Constitution",
+  "updated": "2026-10-17"
+ },
+ {
+  "lang": "en",
+  "path": "agenda-watch/2026-10-21/",
+  "title": "Council meeting 2026-10-21",
+  "updated": "2026-10-22"
+ },
+ {
+  "lang": "en",
+  "path": "search/",
+  "title": "Search this site",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "es",
+  "path": "es/search/",
+  "title": "Buscar en este sitio",
+  "updated": "2026-10-23"
+ }
+]
