@@ -834,8 +834,6 @@ main .review-note { margin-top: .75rem; }
 .prose .table-wrap table { min-width: 32rem; }
 .prose .table-wrap:focus-visible { outline: 3px solid var(--focus-ring); }
 @media (max-width: 39.99rem) {
-  .prose .card { border-left: 0; border-right: 0; border-radius: 0; margin-left: calc(-1 * var(--gutter)); margin-right: calc(-1 * var(--gutter)); padding: 1rem var(--gutter); }
-  .prose .callout, .prose .warning { margin-left: calc(-.5 * var(--gutter)); margin-right: calc(-.5 * var(--gutter)); }
   h2 { font-size: 1.35rem; }
 }
 
@@ -1020,3 +1018,124 @@ html:not(.js) .lesson-bar { display: none; }
 @media print { .site-header { position: static; } .lesson-side, .lesson-bar, .onpage, .onpage-rail, .to-top, .lesson-pager, .lesson-done-wrap, .home-quick, .footer-nav { display: none !important; } }
 @media (prefers-reduced-motion: reduce) { .site-header, .lesson-side, .to-top { transition: none !important; } }
 @media (max-width: 39.99rem) { .crumbs li[aria-current] { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; } }
+
+/* ========== 7. Reading experience (Oct 23, 2026): one calm, continuous document ==========
+ * One vertical rhythm (--flow), one heading scale, one callout style, quiet citation markers,
+ * a single "official text" treatment, stacked tables on phones. Scoped to article text (.prose) outside the home page. */
+:root { --flow: 1.1rem; --measure: 40rem; --callout-bg: color-mix(in srgb, var(--olive) 55%, var(--bg)); }
+body:not(.page-home) .prose { font-size: 1.0625rem; line-height: 1.68; color: var(--ink); }
+@media (min-width: 64rem) { body:not(.page-home) .prose { font-size: 1.09rem; } }
+body:not(.page-home) .prose :is(p, li, dd) { max-width: var(--measure); }
+/* rhythm: every block gets the same space below; headings carry their own space above */
+body:not(.page-home) .prose :is(p, ul, ol, dl, figure, blockquote, .table-wrap, .takeaways, .callout, .warning, .quiz-set, details.legend) { margin: 0 0 var(--flow); }
+body:not(.page-home) .prose :is(ul, ol) { padding-left: 1.3rem; }
+body:not(.page-home) .prose li { margin: 0 0 .5rem; padding-left: .15rem; }
+body:not(.page-home) .prose li:last-child { margin-bottom: 0; }
+body:not(.page-home) .prose li > :is(ul, ol) { margin: .5rem 0 0; }
+body:not(.page-home) .prose li > p { margin: 0 0 .5rem; }
+body:not(.page-home) .prose ul > li::marker { color: var(--muted); }
+body:not(.page-home) .prose ol > li::marker { color: var(--muted); font-weight: 650; font-variant-numeric: tabular-nums; }
+/* heading scale: h2 section, h3 sub-section, h4 run-in label; same family, weight and spacing everywhere */
+body:not(.page-home) .prose :is(h2, h3, h4) { font-family: var(--font-display); color: var(--ink); text-wrap: balance; letter-spacing: -.012em; }
+body:not(.page-home) .prose h2 { font-size: clamp(1.4rem, 1.25rem + .6vw, 1.6rem); font-weight: 650; line-height: 1.22; margin: calc(var(--flow) * 2.6) 0 calc(var(--flow) * .6); padding-top: 0; }
+body:not(.page-home) .prose h3 { font-size: clamp(1.13rem, 1.08rem + .25vw, 1.22rem); font-weight: 650; line-height: 1.3; margin: calc(var(--flow) * 1.8) 0 calc(var(--flow) * .45); }
+body:not(.page-home) .prose h4 { font-size: 1rem; font-weight: 700; line-height: 1.35; margin: calc(var(--flow) * 1.4) 0 calc(var(--flow) * .35); }
+body:not(.page-home) .prose > :first-child, body:not(.page-home) .prose h2 + h3 { margin-top: 0; }
+body:not(.page-home) .prose h2 + h3 { margin-top: calc(var(--flow) * .9); }
+body:not(.page-home) .prose strong { font-weight: 650; }
+body:not(.page-home) .prose em { font-style: italic; }
+/* links in running text: thinner, quieter underline */
+.prose a:not(.btn):not(.cite):not(.card-link) { text-decoration-thickness: 1px; text-underline-offset: .2em; text-decoration-color: color-mix(in srgb, currentColor 45%, transparent); }
+.prose a:not(.btn):not(.cite):hover { text-decoration-color: currentColor; text-decoration-thickness: 2px; }
+/* the first paragraph reads as a standfirst */
+body:not(.page-home) .prose > p:first-child { font-size: 1.06em; color: var(--ink); }
+
+/* claim markers: small raised ✓ + source numbers, never a pill in running text */
+.claim { font-size: .7em; line-height: 0; vertical-align: .55em; white-space: nowrap; margin-left: .12em; font-weight: 700; font-family: var(--font); letter-spacing: 0; }
+.claim-l { color: var(--muted); font-weight: 650; }
+.claim-v .claim-l { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+.claim-v::before { content: "✓" / ""; color: var(--v-fg); margin-right: .1em; }
+.claim-u .claim-l { color: var(--u-fg); font-style: italic; text-transform: lowercase; margin-right: .2em; }
+.claim-c .claim-l { color: var(--c-fg); text-transform: lowercase; margin-right: .2em; }
+.claim-refs { display: inline; }
+.cite, .claim .cite { font-size: 1em; font-weight: 700; color: var(--link); text-decoration: none; padding: 0 .08em; border-radius: 3px; }
+.cite:hover { text-decoration: underline; }
+.cite:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 1px; }
+.cite-sep { color: var(--muted); }
+:target { scroll-margin-top: calc(var(--sticky-top) + var(--bar-h, 0px) + 1rem); }
+.page-sources li:target { background: var(--gold); border-radius: 6px; }
+
+/* official text: one quiet "paper" block with a small label row */
+.prose figure.official { margin-left: 0; margin-right: 0; padding: .95rem 1.1rem 1rem; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--l1-bd); border-radius: 4px 12px 12px 4px; }
+.official-h { display: flex; flex-wrap: wrap; align-items: baseline; gap: .15rem .6rem; margin: 0 0 .55rem; font-family: var(--font); font-size: .8rem; line-height: 1.4; }
+.official-k { font-weight: 750; letter-spacing: .07em; text-transform: uppercase; color: var(--l1-bd); }
+.official-t { font-weight: 650; color: var(--ink); }
+.official-ctx { margin-left: auto; font-weight: 600; white-space: nowrap; }
+.official-body { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; font-size: 1.06rem; line-height: 1.62; color: var(--ink); }
+.official-body p { margin: 0 0 .7rem; max-width: none; }
+.official-body p:last-child { margin-bottom: 0; }
+.official-body em { font-style: italic; }
+.official-body strong { font-weight: 700; }
+.clause-n { font-family: var(--font); font-size: .74rem; font-weight: 750; letter-spacing: .04em; color: var(--muted); margin-right: .15rem; white-space: nowrap; }
+.official-src { margin: .7rem 0 0 !important; padding-top: .55rem; border-top: 1px solid var(--line); font-size: .8rem; color: var(--muted); max-width: none !important; }
+/* plain quotations (short excerpts) */
+.prose blockquote { padding: .1rem 0 .1rem 1rem; background: none; border-radius: 0; box-shadow: none; border-left: 3px solid var(--line-strong); font-family: inherit; font-size: 1em; color: var(--ink); }
+.prose blockquote p { margin: 0 0 .5rem; }
+.prose blockquote p:last-child { margin-bottom: 0; }
+
+/* one callout style: tinted panel with a thin brand rule (callout, key takeaways, the old cards' callouts) */
+.prose :is(.callout, .takeaways) { background: var(--callout-bg); border: 0; box-shadow: inset 3px 0 0 var(--brand); border-radius: 4px 12px 12px 4px; padding: .9rem 1.1rem; }
+.prose .warning { border: 0; box-shadow: inset 3px 0 0 var(--danger); border-radius: 4px 12px 12px 4px; padding: .9rem 1.1rem; }
+.prose :is(.callout, .warning, .takeaways) > :last-child { margin-bottom: 0; }
+.prose :is(.callout, .warning) p { margin-bottom: .6rem; }
+.takeaways-h { margin: 0 0 .5rem !important; font-family: var(--font); font-size: .78rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; color: var(--brand); }
+.takeaways ul { margin: 0; padding-left: 1.15rem; }
+.takeaways li { margin-bottom: .4rem; }
+.takeaways li strong { font-weight: 650; }
+/* "Our reading" opinion label: same look whether the Markdown used bold or italics */
+.our-reading { font-weight: 700; font-style: normal; color: var(--warm); font-size: .95em; }
+
+/* hand-made cards inside articles become plain sections divided by a hairline */
+body:not(.page-home) .prose .card { background: none; border: 0; box-shadow: none; border-radius: 0; padding: 0; margin: calc(var(--flow) * 2) 0; }
+body:not(.page-home) .prose .card + .card { border-top: 1px solid var(--line); padding-top: calc(var(--flow) * 1.6); }
+body:not(.page-home) .prose .card > h3:first-child { margin-top: 0; }
+
+/* self-check: one list with dividers instead of a stack of boxes */
+.prose .quiz-set { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.prose .quiz-set details.quiz { background: none; border: 0; border-radius: 0; box-shadow: none; padding: 0; margin: 0; }
+.prose .quiz-set details.quiz + details.quiz { border-top: 1px solid var(--line); }
+.prose .quiz-set details.quiz > summary { display: block; position: relative; min-height: 48px; padding: .75rem 0 .75rem 2.2rem; list-style: none; cursor: pointer; font-weight: 600; line-height: 1.45; border: 0; margin: 0; }
+.prose .quiz-set details.quiz > summary::-webkit-details-marker { display: none; }
+.prose .quiz-set details.quiz > summary::before { content: "+" / ""; position: absolute; left: 0; top: .78rem; width: 1.5rem; height: 1.5rem; display: grid; place-items: center; border-radius: 50%; background: var(--brand-soft); color: var(--brand); font-weight: 800; margin-top: .05rem; }
+.prose .quiz-set details.quiz[open] > summary::before { content: "–" / ""; }
+.prose .quiz-set details.quiz[open] { box-shadow: none; }
+.prose .quiz-set details.quiz[open] > summary { border: 0; margin: 0; }
+.prose .quiz-set details.quiz > :not(summary) { margin: 0 0 .9rem 2.2rem; }
+
+/* tables: quiet grid on wide screens; on phones, 3+ column tables become stacked entries */
+.prose .table-wrap { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.prose .table-wrap table { width: 100%; border-collapse: collapse; font-size: .95rem; line-height: 1.5; }
+.prose .table-wrap th { text-align: left; font-size: .78rem; font-weight: 750; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); background: var(--surface-2); padding: .6rem .8rem; border-bottom: 1px solid var(--line); vertical-align: bottom; }
+.prose .table-wrap td { padding: .65rem .8rem; border-bottom: 1px solid var(--line); vertical-align: top; background: none; }
+.prose .table-wrap tr:last-child td { border-bottom: 0; }
+.prose .table-wrap table.t-2 { min-width: 0; }
+@media (max-width: 39.99rem) {
+  .prose .table-wrap[data-stack] { border: 0; background: none; border-radius: 0; overflow: visible; }
+  .prose table.t-stack, .prose table.t-stack tbody, .prose table.t-stack tr, .prose table.t-stack td { display: block; width: auto; min-width: 0 !important; }
+  .prose table.t-stack thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .prose table.t-stack tr { padding: .8rem 0; border-top: 1px solid var(--line); }
+  .prose table.t-stack tr:last-child { border-bottom: 1px solid var(--line); }
+  .prose table.t-stack td { padding: .1rem 0 .35rem; border: 0; font-size: 1rem; }
+  .prose table.t-stack td::before { content: attr(data-label); display: block; font-size: .72rem; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: .05rem; }
+  .prose table.t-stack td:first-child { font-weight: 650; font-size: 1.05rem; }
+  .prose table.t-stack td:first-child::before { display: none; }
+  .prose table.t-stack td:empty { display: none; }
+}
+/* lesson head and "On this page" sit closer to the text */
+.is-lesson .page-head { margin-bottom: 1rem; }
+.is-lesson .onpage { margin-bottom: calc(var(--flow) * 1.4); }
+/* sources list: smaller, calmer */
+.page-sources { margin-top: calc(var(--flow) * 3); padding-top: var(--flow); border-top: 1px solid var(--line); font-size: .9rem; }
+.page-sources h2 { font-size: 1.1rem !important; margin: 0 0 .6rem !important; }
+.page-sources li { margin-bottom: .45rem; }
+@media print { .claim-v .claim-l { position: static; width: auto; height: auto; clip: auto; clip-path: none; } .claim-v::before { content: ""; } }
