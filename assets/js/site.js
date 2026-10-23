@@ -468,6 +468,16 @@
   }
 
   var data = load();
+  // Collapsed "Go deeper" panel: open it for returning visitors with saved ticks, or when a link points inside it.
+  var deeper = box.closest ? box.closest('[data-deeper]') : null;
+  function openFor(hash) {
+    if (!deeper || deeper.open || !hash || hash.length < 2) return;
+    var t = null; try { t = document.getElementById(decodeURIComponent(hash.slice(1))); } catch (e) { t = null; }
+    if (t && deeper.contains(t)) { deeper.open = true; t.scrollIntoView(); }
+  }
+  if (deeper && Object.keys(data).length) deeper.open = true;
+  openFor(location.hash);
+  window.addEventListener('hashchange', function () { openFor(location.hash); });
   fields.forEach(function (f) { var v = data[f.getAttribute('data-save')]; if (v === undefined) return; if (f.type === 'checkbox') f.checked = !!v; else f.value = String(v); });
   count();
 
