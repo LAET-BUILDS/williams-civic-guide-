@@ -7,6 +7,36 @@
  },
  {
   "lang": "en",
+  "path": "city-records/budget/",
+  "title": "The city budget in plain terms",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "city-records/fees/",
+  "title": "Fees and rates tracker",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "city-records/",
+  "title": "City records in plain terms",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "city-records/ordinances/",
+  "title": "Ordinances and resolutions, 2024 to 2026",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
+  "path": "city-records/planning/",
+  "title": "Planning basics",
+  "updated": "2026-10-23"
+ },
+ {
+  "lang": "en",
   "path": "constitutions/ca/article-1-criminal-justice/",
   "title": "California Article I (part 3): Criminal justice rights",
   "updated": "2026-10-23"
@@ -484,6 +514,41 @@
   "path": "es/agenda-watch/",
   "title": "Vigilancia de agendas",
   "updated": "2026-10-22",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/city-records/budget/",
+  "title": "El presupuesto de la ciudad en palabras sencillas",
+  "updated": "2026-10-23",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/city-records/fees/",
+  "title": "Registro de cuotas y tarifas",
+  "updated": "2026-10-23",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/city-records/",
+  "title": "Registros de la ciudad en palabras sencillas",
+  "updated": "2026-10-23",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/city-records/ordinances/",
+  "title": "Ordenanzas y resoluciones, 2024 a 2026",
+  "updated": "2026-10-23",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/city-records/planning/",
+  "title": "Lo básico de la planificación",
+  "updated": "2026-10-23",
   "review": "pending"
  },
  {
