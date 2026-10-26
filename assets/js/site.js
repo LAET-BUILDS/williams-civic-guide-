@@ -166,8 +166,8 @@
 
   // ---------- site search ----------
   var M = ES
-    ? { ph: 'Buscar en la guía', loading: 'Cargando…', fail: 'No se pudo cargar la búsqueda.', none: 'Sin resultados para', one: '1 resultado', many: ' resultados', type: 'Escriba al menos 2 letras.', close: 'Cerrar', all: 'Ver todos los resultados', label: 'Buscar en todo el sitio', kinds: { course: 'Lección', text: 'Texto', agenda: 'Agenda', term: 'Glosario', page: 'Guía' } }
-    : { ph: 'Search the guide', loading: 'Loading…', fail: 'Search could not load.', none: 'No results for', one: '1 result', many: ' results', type: 'Type at least 2 letters.', close: 'Close', all: 'See all results', label: 'Search the whole site', kinds: { course: 'Lesson', text: 'Full text', agenda: 'Agenda', term: 'Glossary', page: 'Guide' } };
+    ? { ph: 'Buscar en el sitio', loading: 'Cargando…', fail: 'No se pudo cargar la búsqueda.', none: 'Sin resultados para', one: '1 resultado', many: ' resultados', type: 'Escriba al menos 2 letras.', close: 'Cerrar', all: 'Ver todos los resultados', label: 'Buscar en todo el sitio', kinds: { course: 'Lección', text: 'Texto', agenda: 'Agenda', term: 'Glosario', page: 'Página' } }
+    : { ph: 'Search the site', loading: 'Loading…', fail: 'Search could not load.', none: 'No results for', one: '1 result', many: ' results', type: 'Type at least 2 letters.', close: 'Close', all: 'See all results', label: 'Search the whole site', kinds: { course: 'Lesson', text: 'Full text', agenda: 'Agenda', term: 'Glossary', page: 'Page' } };
   function norm(s) { return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
   function escH(s) { return String(s || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   var base = root.getAttribute('data-base') || '/', idxURL = root.getAttribute('data-search'), searchPage = root.getAttribute('data-search-page');
