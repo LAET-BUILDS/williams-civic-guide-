@@ -906,6 +906,17 @@ html:not(.js) .lesson-bar { display: none; }
 .lesson-list-full .ll-unit-h { font-size: .8rem; margin-top: 1.5rem; }
 .lesson-list-full a { border: 1px solid var(--line); background: var(--surface); padding: .75rem .85rem; margin-bottom: .5rem; border-radius: var(--radius-sm); }
 .lesson-list-full a:hover { border-color: var(--brand); }
+.lesson-list-units .ll-fold { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); margin: 0 0 .6rem; padding: 0 .85rem; }
+.lesson-list-units .ll-fold > summary { display: block; list-style: none; position: relative; cursor: pointer; min-height: 48px; padding: .75rem 2.2rem .75rem 0; }
+.lesson-list-units .ll-fold > summary::-webkit-details-marker { display: none; }
+.lesson-list-units .ll-fold > summary::after { content: "+" / ""; position: absolute; right: 0; top: .8rem; width: 1.6rem; height: 1.6rem; display: grid; place-items: center; border-radius: 50%; background: var(--brand-soft); color: var(--brand); font-weight: 800; }
+.lesson-list-units .ll-fold[open] > summary::after { content: "–" / ""; }
+.lesson-list-units .ll-fold[open] { padding-bottom: .4rem; }
+.ll-unit-name { display: block; font-weight: 800; color: var(--ink); overflow-wrap: anywhere; }
+.ll-unit-sub { display: block; font-size: .88rem; color: var(--muted); }
+.lesson-list-units .ll-fold a { margin-bottom: .45rem; }
+details.by-article ul { padding-left: 1.1rem; }
+details.by-article li { margin: .35rem 0; }
 .lesson-pager { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; margin: 2rem 0 1rem; }
 .pager-card { display: flex; flex-direction: column; gap: .2rem; min-height: 4.5rem; padding: .85rem 1rem; border: 1.5px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); color: var(--ink); text-decoration: none; }
 .pager-card:visited { color: var(--ink); }

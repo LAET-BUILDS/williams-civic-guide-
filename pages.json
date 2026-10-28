@@ -212,7 +212,7 @@
  {
   "lang": "en",
   "path": "constitutions/",
-  "title": "The Constitution Course: how your rights reach Williams",
+  "title": "Constitutions: how your rights reach Williams",
   "updated": "2026-10-23"
  },
  {
@@ -278,7 +278,7 @@
  {
   "lang": "en",
   "path": "constitutions/us/amendment-19/",
-  "title": "Nineteenth Amendment: Women's suffrage",
+  "title": "Nineteenth Amendment: Women's right to vote",
   "updated": "2026-10-23"
  },
  {
@@ -332,7 +332,7 @@
  {
   "lang": "en",
   "path": "constitutions/us/amendment-27/",
-  "title": "Twenty-seventh Amendment: Congressional pay changes wait for an election",
+  "title": "Twenty-seventh Amendment: Congressional pay",
   "updated": "2026-10-23"
  },
  {
@@ -575,7 +575,7 @@
   "lang": "es",
   "path": "es/constitutions/",
   "title": "El curso de la Constitución: cómo llegan sus derechos a Williams",
-  "updated": "2026-10-23",
+  "updated": "2026-10-27",
   "review": "pending"
  },
  {
@@ -883,12 +883,12 @@
   "lang": "en",
   "path": "search/",
   "title": "Search this site",
-  "updated": "2026-10-26"
+  "updated": "2026-10-27"
  },
  {
   "lang": "es",
   "path": "es/search/",
   "title": "Buscar en este sitio",
-  "updated": "2026-10-26"
+  "updated": "2026-10-27"
  }
 ]
