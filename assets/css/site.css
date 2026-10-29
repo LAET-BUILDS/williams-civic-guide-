@@ -1255,8 +1255,15 @@ details.kyr > summary::after { content: "+"; flex: 0 0 auto; display: inline-gri
 details.kyr[open] > summary::after { content: "−"; }
 details.kyr[open] { border-color: var(--brand); }
 .kyr-a { padding: 0 var(--sp-4) var(--sp-4); }
-.kyr-a > ul:first-child { margin: 0 0 var(--sp-3); padding-left: 1.15rem; }
-.kyr-a > ul:first-child li { margin: .3rem 0; }
+.kyr-lead { margin: 0 0 var(--sp-3); font-size: var(--fs-md, 1.05rem); line-height: 1.5; overflow-wrap: anywhere; }
+.kyr-h { font-size: var(--fs-sm); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: var(--sp-3) 0 .35rem; }
+.kyr-todo { margin: 0 0 var(--sp-3); padding-left: 1.4rem; }
+.kyr-todo li, .kyr-sec li { margin: .35rem 0; line-height: 1.5; overflow-wrap: anywhere; }
+.kyr-secs { display: grid; gap: .4rem; margin: 0 0 var(--sp-3); }
+details.kyr-sec { border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface-2, var(--surface)); }
+details.kyr-sec > summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; padding: .5rem .75rem; font-weight: 700; }
+details.kyr-sec[open] > summary { border-bottom: 1px solid var(--line); }
+details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
 .kyr-links { list-style: none; margin: 0; padding: var(--sp-3) 0 0; border-top: 1px solid var(--line); display: grid; gap: .35rem; font-size: var(--fs-sm); font-weight: 650; }
 .rule-behind { font-size: var(--fs-sm); margin: .5rem 0 0; padding: .45rem .7rem; border-left: 4px solid var(--olive-ink); background: var(--olive); border-radius: 0 10px 10px 0; overflow-wrap: anywhere; }
 .rb-k { font-weight: 750; color: var(--olive-ink); margin-right: .25em; }
@@ -1278,7 +1285,7 @@ details.kyr[open] { border-color: var(--brand); }
   .pt-now { grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); align-items: start; }
   .pt-tiles { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .pt-wide { grid-column: span 2; }
-  .kyr-list { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+  .kyr-list { max-width: 52rem; }
 }
 @media (prefers-color-scheme: dark) { .pt-hero { background: var(--surface-2); } }
 
