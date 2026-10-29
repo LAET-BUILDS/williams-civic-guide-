@@ -505,3 +505,50 @@
     var first = checks[0]; if (first) first.focus();
   });
 })();
+
+// ---------- "Continue learning" card (home, hidden until there is progress) and "Your progress" (Learn tab) ----------
+// Reads the same browser-only stores as the lessons (wcg-course-constitutions[-es]) and the Method checklist
+// (wcg-method-v1). Nothing leaves the browser. See UPDATING.md §17.
+(function () {
+  var cards = document.querySelectorAll('[data-continue]');
+  if (!cards.length) return;
+  var store = null; try { store = window.localStorage; store.getItem('x'); } catch (e) { store = null; }
+  var read = function (k) { if (!store) return {}; try { return JSON.parse(store.getItem(k) || '{}') || {}; } catch (e) { return {}; } };
+  var a = read('wcg-course-constitutions'), b = read('wcg-course-constitutions-es');
+  var D = {}, V = {};
+  [a, b].forEach(function (p) { var k; for (k in (p.d || {})) D[k] = 1; for (k in (p.v || {})) V[k] = 1; });
+  var M = read('wcg-method-v1'), ticks = Object.keys(M).filter(function (k) { return M[k] === true; }).length;
+  var base = document.documentElement.getAttribute('data-base') || '/';
+  Array.prototype.forEach.call(cards, function (el) {
+    var es = el.getAttribute('data-lang') === 'es', home = el.getAttribute('data-continue') === 'home';
+    var L = []; try { L = JSON.parse(el.querySelector('[data-cl-lessons]').textContent) || []; } catch (e) { L = []; }
+    var total = L.length || +el.getAttribute('data-total') || 0, mt = +el.getAttribute('data-method-total') || 0;
+    var done = 0, last = -1, seen = 0;
+    L.forEach(function (l, i) { if (D[l.p]) { done++; last = Math.max(last, i); } if (V[l.p]) { seen++; last = Math.max(last, i); } });
+    if (home && !done && !seen && !ticks) return; // nothing to continue: the card stays hidden
+    var next = null, i;
+    for (i = last + 1; i < L.length; i++) if (!D[L[i].p]) { next = L[i]; break; }
+    if (!next) for (i = 0; i < L.length; i++) if (!D[L[i].p]) { next = L[i]; break; }
+    var pct = total ? Math.round(done / total * 100) : 0;
+    var fill = el.querySelector('[data-meter]'); if (fill) fill.style.width = pct + '%';
+    var t = el.querySelector('[data-cl-text]');
+    if (t && (done || seen)) t.textContent = es ? (done + ' de ' + total + ' lecciones terminadas') : (done + ' of ' + total + ' lessons done');
+    var nx = el.querySelector('[data-cl-next]'), lab = el.querySelector('[data-cl-label]'), row = el.querySelector('.cl-next');
+    if (next && nx) {
+      nx.href = base + next.p;
+      nx.textContent = (es ? 'Lección ' : 'Lesson ') + next.n + ': ' + next.t;
+      if (lab && (done || seen)) lab.textContent = es ? 'Siga con' : 'Continue with';
+    } else if (row) {
+      row.textContent = es ? 'Terminó todas las lecciones.' : 'You have finished every lesson.';
+    }
+    var m = el.querySelector('[data-cl-method]');
+    if (m && ticks) {
+      m.innerHTML = '';
+      var link = document.createElement('a'); link.href = el.getAttribute('data-method-href'); link.textContent = es ? 'El Método' : 'The Method';
+      m.appendChild(link);
+      m.appendChild(document.createTextNode(es ? (': ' + ticks + ' de ' + mt + ' puntos marcados') : (': ' + ticks + ' of ' + mt + ' items ticked')));
+      m.hidden = false;
+    }
+    el.hidden = false;
+  });
+})();
