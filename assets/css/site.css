@@ -1402,3 +1402,18 @@ details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
 .ps-fold > summary { font-weight: 650; }
 .footer-nav { grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); gap: var(--sp-4) var(--sp-4); }
 .footer-nav a { padding: .3rem 0; }
+
+/* ========== home core section (Oct 29, 2026): How power works + three layers ========== */
+.pt-core { display: grid; gap: var(--sp-4); }
+.pt-power { border-top: 6px solid var(--brand); }
+.pt-layers { border-top: 6px solid var(--gold); }
+.pt-power-lead { font-size: var(--fs-lg); margin: 0 0 var(--sp-3); }
+.pt-power-list { margin: 0 0 var(--sp-3); padding-left: 1.1rem; display: grid; gap: var(--sp-2); }
+.pt-power-list li { overflow-wrap: anywhere; }
+.pt-power-parts { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0; font-size: var(--fs-sm); }
+.pt-power-parts a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 .75rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); text-decoration: none; font-weight: 650; }
+.pt-power-parts a:hover { border-color: var(--brand); }
+.page-home .pt-layers .layers-home { margin: var(--sp-2) 0 0; padding: var(--sp-3); box-shadow: none; background: transparent; border: 0; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.page-home .pt-layers .layers-home figcaption { margin-bottom: var(--sp-2); }
+.page-home .search-btn .sb-label { display: inline; }
+@media (min-width: 60rem) { .pt-core { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: stretch; } }
