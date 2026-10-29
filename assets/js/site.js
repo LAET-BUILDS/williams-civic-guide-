@@ -520,7 +520,7 @@
   var M = read('wcg-method-v1'), ticks = Object.keys(M).filter(function (k) { return M[k] === true; }).length;
   var base = document.documentElement.getAttribute('data-base') || '/';
   Array.prototype.forEach.call(cards, function (el) {
-    var es = el.getAttribute('data-lang') === 'es', home = el.getAttribute('data-continue') === 'home';
+    var es = el.getAttribute('data-lang') === 'es', home = el.getAttribute('data-continue') === 'home', strip = el.getAttribute('data-continue') === 'strip';
     var L = []; try { L = JSON.parse(el.querySelector('[data-cl-lessons]').textContent) || []; } catch (e) { L = []; }
     var total = L.length || +el.getAttribute('data-total') || 0, mt = +el.getAttribute('data-method-total') || 0;
     var done = 0, last = -1, seen = 0;
@@ -534,7 +534,22 @@
     var t = el.querySelector('[data-cl-text]');
     if (t && (done || seen)) t.textContent = es ? (done + ' de ' + total + ' lecciones terminadas') : (done + ' of ' + total + ' lessons done');
     var nx = el.querySelector('[data-cl-next]'), lab = el.querySelector('[data-cl-label]'), row = el.querySelector('.cl-next');
-    if (next && nx) {
+    if (strip) { // home Constitution Course strip (v5): always shown; the button reads Start or Continue
+      var mtr = el.querySelector('[data-cs-meter]'); if (mtr && (done || seen)) mtr.hidden = false;
+      var what = el.querySelector('[data-cs-what]');
+      if (next && nx) {
+        nx.href = base + next.p;
+        if (done || seen) {
+          if (lab) lab.textContent = es ? 'Continuar' : 'Continue';
+          if (t) t.textContent = (es ? (done + ' de ' + total + ' lecciones terminadas. Sigue: lección ') : (done + ' of ' + total + ' lessons done. Next: lesson ')) + next.n + ', ' + next.t + '.';
+        }
+        if (what) what.textContent = ': ' + (es ? 'Lección ' : 'Lesson ') + next.n + ', ' + next.t + (es ? ' (en inglés)' : '');
+      } else if (nx) {
+        if (lab) lab.textContent = es ? 'Repasar' : 'Review';
+        if (t) t.textContent = es ? 'Terminó todas las lecciones.' : 'You have finished every lesson.';
+        nx.href = base + (L[0] ? L[0].p : '');
+      }
+    } else if (next && nx) {
       nx.href = base + next.p;
       nx.textContent = (es ? 'Lección ' : 'Lesson ') + next.n + ': ' + next.t;
       if (lab && (done || seen)) lab.textContent = es ? 'Siga con' : 'Continue with';

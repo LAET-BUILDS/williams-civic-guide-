@@ -2,8 +2,8 @@
  {
   "lang": "en",
   "path": "agenda-watch/",
-  "title": "Agenda Watch",
-  "updated": "2026-10-22"
+  "title": "This week at City Hall: Agenda Watch",
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -21,7 +21,7 @@
   "lang": "en",
   "path": "city-records/",
   "title": "City records in plain terms",
-  "updated": "2026-10-23"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -212,8 +212,8 @@
  {
   "lang": "en",
   "path": "constitutions/",
-  "title": "Constitutions: how your rights reach Williams",
-  "updated": "2026-10-28"
+  "title": "Your rights: The Constitution Course",
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -471,7 +471,7 @@
   "lang": "en",
   "path": "",
   "title": "Home",
-  "updated": "2026-10-28"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -524,8 +524,8 @@
  {
   "lang": "es",
   "path": "es/agenda-watch/",
-  "title": "Vigilancia de agendas",
-  "updated": "2026-10-22",
+  "title": "Esta semana en el Ayuntamiento: Vigilancia de agendas",
+  "updated": "2026-10-29",
   "review": "pending"
  },
  {
@@ -546,7 +546,7 @@
   "lang": "es",
   "path": "es/city-records/",
   "title": "Registros de la ciudad en palabras sencillas",
-  "updated": "2026-10-23",
+  "updated": "2026-10-29",
   "review": "pending"
  },
  {
@@ -580,8 +580,8 @@
  {
   "lang": "es",
   "path": "es/constitutions/",
-  "title": "El curso de la Constitución: cómo llegan sus derechos a Williams",
-  "updated": "2026-10-28",
+  "title": "Sus derechos: el curso de la Constitución",
+  "updated": "2026-10-29",
   "review": "pending"
  },
  {
@@ -623,7 +623,7 @@
   "lang": "es",
   "path": "es/",
   "title": "Inicio",
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "review": "pending"
  },
  {
