@@ -1190,6 +1190,15 @@ details.more .md-sub { display: block; font-weight: 400; font-size: .9rem; color
 details.more[open] { padding-bottom: .5rem; }
 .rec-cards { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .75rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
 .rec-cards li { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: .9rem 1rem; }
+/* Get it done: compact link cards that fit one phone screen. */
+.gid, body:not(.page-home) .prose ul.gid { list-style: none; padding: 0; margin: 1rem 0; display: grid; gap: .45rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.gid li { margin: 0; min-width: 0; }
+.gid a { display: flex; flex-direction: column; justify-content: center; min-height: 48px; height: 100%; box-sizing: border-box; padding: .45rem .7rem; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); color: var(--ink); text-decoration: none; line-height: 1.25; overflow-wrap: anywhere; }
+.gid a:hover { border-color: var(--brand); }
+.gid a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.gid .gid-t { display: block; font-weight: 800; font-size: .95rem; color: var(--brand); }
+.gid .gid-s { display: block; font-size: .8rem; color: var(--muted); margin-top: .1rem; }
+@media (min-width: 40rem) { .gid, body:not(.page-home) .prose ul.gid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .rec-cards li h2 { margin: 0 0 .25rem; font-size: 1.05rem; }
 .rec-cards li p { margin: 0; font-size: .95rem; }
 

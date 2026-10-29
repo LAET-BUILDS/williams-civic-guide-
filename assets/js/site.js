@@ -552,3 +552,16 @@
     el.hidden = false;
   });
 })();
+
+// Folded "details.more" sections: open the one a link or URL hash points at (e.g. #phones).
+(function () {
+  function openFor(hash) {
+    if (!hash || hash.length < 2) return;
+    var t = null; try { t = document.getElementById(decodeURIComponent(hash.slice(1))); } catch (e) { t = null; }
+    if (!t) return;
+    var d = t.closest ? t.closest('details.more') : null;
+    if (d && !d.open) { d.open = true; t.scrollIntoView(); }
+  }
+  openFor(location.hash);
+  window.addEventListener('hashchange', function () { openFor(location.hash); });
+})();

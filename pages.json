@@ -63,7 +63,7 @@
   "lang": "en",
   "path": "constitutions/ca/article-11/",
   "title": "California Article XI: Local government, and why Williams can regulate at all",
-  "updated": "2026-10-23"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -117,7 +117,7 @@
   "lang": "en",
   "path": "constitutions/ca/article-2/",
   "title": "California Article II: Voting, initiative, referendum and recall",
-  "updated": "2026-10-23"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -177,7 +177,7 @@
   "lang": "en",
   "path": "constitutions/cases/",
   "title": "The cases behind the rights, and where to read the originals",
-  "updated": "2026-10-23"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -249,7 +249,7 @@
   "lang": "en",
   "path": "constitutions/us/amendment-14/",
   "title": "Fourteenth Amendment: Citizenship, due process and equal protection",
-  "updated": "2026-10-23"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -279,7 +279,7 @@
   "lang": "en",
   "path": "constitutions/us/amendment-19/",
   "title": "Nineteenth Amendment: Women's right to vote",
-  "updated": "2026-10-23"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -303,7 +303,7 @@
   "lang": "en",
   "path": "constitutions/us/amendment-22/",
   "title": "Twenty-second Amendment: Presidential term limits",
-  "updated": "2026-10-23"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -321,7 +321,7 @@
   "lang": "en",
   "path": "constitutions/us/amendment-25/",
   "title": "Twenty-fifth Amendment: Presidential succession and disability",
-  "updated": "2026-10-23"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -333,7 +333,7 @@
   "lang": "en",
   "path": "constitutions/us/amendment-27/",
   "title": "Twenty-seventh Amendment: Congressional pay",
-  "updated": "2026-10-23"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -453,7 +453,13 @@
   "lang": "en",
   "path": "documents/",
   "title": "Founding documents",
-  "updated": "2026-10-18"
+  "updated": "2026-10-29"
+ },
+ {
+  "lang": "en",
+  "path": "get-it-done/",
+  "title": "Get it done",
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -471,7 +477,7 @@
   "lang": "en",
   "path": "layers/",
   "title": "Three layers of law",
-  "updated": "2026-10-18"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -483,25 +489,25 @@
   "lang": "en",
   "path": "reference/",
   "title": "Reference",
-  "updated": "2026-10-26"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
   "path": "take-part/brown-act/",
   "title": "Brown Act (open meetings)",
-  "updated": "2026-10-18"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
   "path": "take-part/",
   "title": "Take part",
-  "updated": "2026-10-18"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
   "path": "take-part/public-records-act/",
   "title": "California Public Records Act",
-  "updated": "2026-10-18"
+  "updated": "2026-10-29"
  },
  {
   "lang": "en",
@@ -561,14 +567,14 @@
   "lang": "es",
   "path": "es/constitutions/california/",
   "title": "La Constitución de California: derechos, poder del pueblo y límites al dinero local",
-  "updated": "2026-10-23",
+  "updated": "2026-10-29",
   "review": "pending"
  },
  {
   "lang": "es",
   "path": "es/constitutions/cases/",
   "title": "Los casos detrás de los derechos y dónde leer los originales",
-  "updated": "2026-10-23",
+  "updated": "2026-10-29",
   "review": "pending"
  },
  {
@@ -596,7 +602,14 @@
   "lang": "es",
   "path": "es/documents/",
   "title": "Documentos fundamentales",
-  "updated": "2026-10-18",
+  "updated": "2026-10-29",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/get-it-done/",
+  "title": "Haga sus trámites",
+  "updated": "2026-10-29",
   "review": "pending"
  },
  {
@@ -617,7 +630,7 @@
   "lang": "es",
   "path": "es/layers/",
   "title": "Tres niveles de la ley",
-  "updated": "2026-10-18",
+  "updated": "2026-10-29",
   "review": "pending"
  },
  {
@@ -631,28 +644,28 @@
   "lang": "es",
   "path": "es/reference/",
   "title": "Referencias",
-  "updated": "2026-10-26",
+  "updated": "2026-10-29",
   "review": "pending"
  },
  {
   "lang": "es",
   "path": "es/take-part/brown-act/",
   "title": "Ley Brown (reuniones abiertas)",
-  "updated": "2026-10-18",
+  "updated": "2026-10-29",
   "review": "pending"
  },
  {
   "lang": "es",
   "path": "es/take-part/",
   "title": "Participe",
-  "updated": "2026-10-18",
+  "updated": "2026-10-29",
   "review": "pending"
  },
  {
   "lang": "es",
   "path": "es/take-part/public-records-act/",
   "title": "Ley de Registros Públicos de California",
-  "updated": "2026-10-18",
+  "updated": "2026-10-29",
   "review": "pending"
  },
  {
