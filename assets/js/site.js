@@ -543,7 +543,7 @@
           if (lab) lab.textContent = es ? 'Continuar' : 'Continue';
           if (t) t.textContent = (es ? (done + ' de ' + total + ' lecciones terminadas. Sigue: lección ') : (done + ' of ' + total + ' lessons done. Next: lesson ')) + next.n + ', ' + next.t + '.';
         }
-        if (what) what.textContent = ': ' + (es ? 'Lección ' : 'Lesson ') + next.n + ', ' + next.t + (es ? ' (en inglés)' : '');
+        if (what) what.textContent = ': ' + (es ? 'Lección ' : 'Lesson ') + next.n + ', ' + next.t; // the visible .en-tag says (en inglés)
       } else if (nx) {
         if (lab) lab.textContent = es ? 'Repasar' : 'Review';
         if (t) t.textContent = es ? 'Terminó todas las lecciones.' : 'You have finished every lesson.';
@@ -579,4 +579,28 @@
   }
   openFor(location.hash);
   window.addEventListener('hashchange', function () { openFor(location.hash); });
+})();
+
+// Pick-an-answer quizzes (Oct 30, 2026): a tap shows right or wrong, then the existing explanation.
+// Without JavaScript the radios still work and "Show the answer" still opens.
+(function () {
+  var sets = document.querySelectorAll('[data-qm]');
+  if (!sets.length) return;
+  var es = (document.documentElement.lang || '').indexOf('es') === 0;
+  Array.prototype.forEach.call(sets, function (box) {
+    var fb = box.querySelector('[data-qm-fb]'), ans = box.querySelector('details.qm-ans');
+    box.classList.add('qm-js');
+    box.addEventListener('change', function (e) {
+      var r = e.target; if (!r || r.type !== 'radio') return;
+      var ok = r.hasAttribute('data-ok');
+      Array.prototype.forEach.call(box.querySelectorAll('.qm-opt'), function (l) {
+        var inp = l.querySelector('input'); l.classList.remove('qm-picked', 'qm-right', 'qm-wrong');
+        if (inp.hasAttribute('data-ok')) l.classList.add('qm-right');
+        if (inp === r) l.classList.add('qm-picked', ok ? 'qm-right' : 'qm-wrong');
+      });
+      box.classList.add('qm-done');
+      if (fb) fb.textContent = ok ? (es ? '¡Correcto!' : 'Right!') : ((es ? 'No exactamente. La respuesta correcta es: ' : 'Not quite. The right answer is: ') + box.getAttribute('data-qm-right'));
+      if (ans) ans.open = true;
+    });
+  });
 })();
