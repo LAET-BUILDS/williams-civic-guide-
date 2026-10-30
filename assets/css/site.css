@@ -1417,3 +1417,27 @@ details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
 .page-home .pt-layers .layers-home figcaption { margin-bottom: var(--sp-2); }
 .page-home .search-btn .sb-label { display: inline; }
 /* pt-core now holds one card per section (power moved below Know your rights, Oct 30, 2026) */
+
+/* Oct 30, 2026: visible "(en inglés)" on Spanish links that open English-only pages */
+.en-tag { font-weight: 400; font-size: .9em; white-space: nowrap; }
+.btn .en-tag { margin-left: .3em; opacity: .95; }
+
+/* Oct 30, 2026: pick-an-answer quizzes (each choice is a 48px+ full-width target) */
+.prose .quiz-set-mc { border: 0; }
+.quiz-mc { border-top: 1px solid var(--line); padding: .9rem 0 .4rem; }
+.quiz-mc:first-child { border-top: 0; }
+.qm-fs { border: 0; margin: 0; padding: 0; min-width: 0; }
+.qm-q { font-weight: 600; line-height: 1.45; padding: 0; margin: 0 0 .55rem; }
+.qm-n { color: var(--muted); font-weight: 700; }
+.qm-opts { display: grid; gap: .45rem; }
+.qm-opt { display: flex; align-items: center; gap: .7rem; min-height: 48px; padding: .55rem .85rem; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); cursor: pointer; line-height: 1.35; }
+.qm-opt input { width: 1.25rem; height: 1.25rem; flex: none; margin: 0; accent-color: var(--brand); }
+.qm-opt:focus-within { outline: 3px solid var(--brand); outline-offset: 2px; }
+.qm-done .qm-opt.qm-right { border-color: var(--v-fg); background: var(--v-bg); }
+.qm-done .qm-opt.qm-right .qm-t::after { content: " ✓" / ""; color: var(--v-fg); font-weight: 800; }
+.qm-done .qm-opt.qm-wrong { border-color: var(--u-fg); background: var(--u-bg); }
+.qm-done .qm-opt.qm-wrong .qm-t::after { content: " ✗" / ""; color: var(--u-fg); font-weight: 800; }
+.qm-fb { font-weight: 700; margin: .5rem 0 0; min-height: 0; }
+.qm-fb:empty { display: none; }
+.prose .quiz-set-mc details.qm-ans > summary { font-weight: 600; color: var(--brand); }
+.lesson-done-quiz { margin: 1.25rem 0 2rem; }
