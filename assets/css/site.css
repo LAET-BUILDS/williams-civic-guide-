@@ -1416,4 +1416,4 @@ details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
 .page-home .pt-layers .layers-home { margin: var(--sp-2) 0 0; padding: var(--sp-3); box-shadow: none; background: transparent; border: 0; -webkit-backdrop-filter: none; backdrop-filter: none; }
 .page-home .pt-layers .layers-home figcaption { margin-bottom: var(--sp-2); }
 .page-home .search-btn .sb-label { display: inline; }
-@media (min-width: 60rem) { .pt-core { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: stretch; } }
+/* pt-core now holds one card per section (power moved below Know your rights, Oct 30, 2026) */
