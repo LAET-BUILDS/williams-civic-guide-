@@ -1519,3 +1519,71 @@ details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
 .ess-link { display: block; min-height: 44px; font-weight: 700; font-size: var(--fs-lg); }
 .ess-n { display: block; font-size: var(--fs-sm); color: var(--muted); font-weight: 650; }
 .ess-meta { color: var(--muted); }
+
+/* ===== r2 (Oct 30, 2026): bino-approved homepage cleanup. Everything below overrides earlier homepage rules. ===== */
+/* 1. Header: no logo anywhere; the homepage header has no name (the page heading carries it) */
+.header-home .search-btn { margin-left: auto; }
+.brand { gap: 0; }
+.brand-name { overflow: visible; text-overflow: clip; }
+@media (max-width: 23rem) { .brand { font-size: .95rem; } }
+
+/* 1. Arch photo: only "Built 1917" on the image; credit and sources in one small line under it */
+.page-home .pt-arch { aspect-ratio: auto; overflow: visible; background: none; box-shadow: none; border: 0; border-radius: 0; }
+.pt-arch-img { position: relative; aspect-ratio: 780 / 240; overflow: hidden; background: #6f9fcf; }
+.pt-arch-img picture, .pt-arch-img img { display: block; width: 100%; height: 100%; }
+.pt-arch-img img { object-fit: cover; object-position: 50% 40%; }
+.pt-arch-t { position: absolute; left: .6rem; bottom: .5rem; padding: .2rem .65rem; border-radius: 999px; background: rgba(14, 18, 10, .78); color: #fff; font-size: .8rem; font-weight: 700; line-height: 1.3; }
+.page-home .pt-arch figcaption.pt-arch-c { position: static; display: block; padding: .35rem var(--gutter) 0; background: none; color: var(--muted); text-shadow: none; font-size: .75rem; line-height: 1.5; }
+.page-home .pt-arch-c a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+.page-home .pt-arch-c .cite, .page-home .pt-arch-c .claim .cite { color: var(--link); text-decoration: none; }
+.page-home .pt-arch-c .claim-l { color: var(--muted); }
+.page-home .pt-arch-c .claim-v::before { color: var(--v-fg); }
+.pt-arch-src { white-space: nowrap; }
+@media (min-width: 40rem) { .pt-arch-img { aspect-ratio: 780 / 260; } }
+@media (min-width: 64rem) {
+  .page-home .pt-arch { order: 2; margin: 0; }
+  .pt-arch-img { aspect-ratio: 640 / 397; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); border: 1px solid var(--line); }
+  .page-home .pt-arch figcaption.pt-arch-c { padding-left: 0; padding-right: 0; }
+}
+
+/* 2. One "Sources:" line at the end of each homepage box */
+.page-home .pt-src { font-size: var(--fs-sm); color: var(--muted); margin: var(--sp-3) 0 0; line-height: 1.6; }
+.page-home .pt-src .claim { font-size: 1em; vertical-align: baseline; line-height: inherit; margin-left: .15em; }
+.page-home .pt-src .claim + .claim { margin-left: .6em; }
+.page-home .pt-src .cite-sep { display: none; }
+.page-home .kyr-part .pt-src { margin: .25rem 0 var(--sp-2); }
+
+/* 3. One homepage look: one box style, one accent (brand green), one button style, plain headings, one spacing step */
+.page-home .prose > * + * { margin-top: var(--sp-5); }
+.page-home .pt-now, .page-home .pt-doors-sec, .page-home .pt-sec, .page-home .pt-kyr { margin-top: var(--sp-5); }
+.page-home .pt-card, .page-home .pt-door, .page-home .pt-kyr {
+  background: var(--surface); border: 1px solid var(--line); border-top: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.page-home .pt-card, .page-home .pt-kyr { padding: var(--sp-4) var(--sp-5) var(--sp-5); }
+.page-home .course-strip { background: var(--surface); }
+.page-home .pt-meeting, .page-home .pt-latest, .page-home .pt-power, .page-home .pt-layers, .page-home .course-strip { border-top: 1px solid var(--line); }
+.page-home .pt-k { color: var(--olive-ink); }
+.page-home .pt-card h2, .page-home .pt-sec > h2, .page-home .pt-kyr > h2 { font-size: var(--fs-xl); line-height: 1.2; margin: var(--sp-1) 0 var(--sp-2); color: var(--ink); }
+.page-home .pt-card h2 a { color: inherit; text-decoration: none; }
+/* Know your rights: the six questions sit inside the box as rows, not boxes in a box */
+.page-home .pt-kyr .kyr-list { gap: 0; }
+.page-home .pt-kyr details.kyr { border: 0; border-top: 1px solid var(--line); border-radius: 0; background: none; }
+.page-home .pt-kyr details.kyr > summary { padding-left: 0; padding-right: 0; }
+.page-home .pt-kyr .kyr-a { padding: 0 0 var(--sp-3); }
+/* one button style: every homepage button is the filled green pill, full width on phones */
+.page-home .btn-ghost, .page-home .btn-ghost:visited { background: var(--brand); color: var(--on-brand); border-color: transparent; box-shadow: 0 6px 16px -6px color-mix(in srgb, var(--brand) 70%, transparent); }
+.page-home .btn-ghost:hover { background: var(--brand-2); color: var(--on-brand); }
+.page-home .pt-card .btn { width: 100%; margin-top: var(--sp-3); }
+.page-home .cs-actions .btn { width: 100%; }
+@media (min-width: 40rem) { .page-home .pt-card .btn, .page-home .cs-actions .btn { width: auto; } }
+/* power section's three parts: plain links, not a second kind of button */
+.page-home .pt-power-parts { gap: 0 1.1rem; }
+.page-home .pt-power-parts a { border: 0; border-radius: 0; background: none; padding: 0; font-weight: 650; text-decoration: underline; text-underline-offset: .2em; }
+/* meeting box: the two follow-up links stack as two clean lines (no dot left at a line start) */
+.page-home .pt-confirm { line-height: 1.5; margin-top: var(--sp-3); }
+.page-home .pt-confirm a { display: block; width: fit-content; padding: .7rem 0; margin: 0; }
+.page-home .pt-confirm .pt-sep { display: none; }
+/* arch credit: no stray commas between source numbers */
+.page-home .pt-arch-src .cite-sep { display: none; }
+.page-home .pt-arch-src .cite + .cite { margin-left: .35em; }

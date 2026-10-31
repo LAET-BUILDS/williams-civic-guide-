@@ -538,12 +538,15 @@
       var mtr = el.querySelector('[data-cs-meter]'); if (mtr && (done || seen)) mtr.hidden = false;
       var what = el.querySelector('[data-cs-what]');
       if (next && nx) {
-        nx.href = base + next.p;
+        // r2 (Oct 30, 2026): before any progress, Start keeps its built link (the 5-lesson essentials page)
         if (done || seen) {
+          nx.href = base + next.p;
           if (lab) lab.textContent = es ? 'Continuar' : 'Continue';
-          if (t) t.textContent = (es ? (done + ' de ' + total + ' lecciones terminadas. Sigue: lección ') : (done + ' of ' + total + ' lessons done. Next: lesson ')) + next.n + ', ' + next.t + '.';
+          // Spanish: lesson titles are English, so name the lesson by number only and say it is in English
+          if (t) t.textContent = es ? (done + ' de ' + total + ' lecciones terminadas. Sigue: lección ' + next.n + ' (en inglés).') : (done + ' of ' + total + ' lessons done. Next: lesson ' + next.n + ', ' + next.t + '.');
+          if (what) what.textContent = ': ' + (es ? 'lección ' + next.n : 'Lesson ' + next.n + ', ' + next.t);
+          if (es && !nx.querySelector('.en-tag')) { var tag = document.createElement('span'); tag.className = 'en-tag'; tag.textContent = ' (en inglés)'; nx.appendChild(tag); }
         }
-        if (what) what.textContent = ': ' + (es ? 'Lección ' : 'Lesson ') + next.n + ', ' + next.t; // the visible .en-tag says (en inglés)
       } else if (nx) {
         if (lab) lab.textContent = es ? 'Repasar' : 'Review';
         if (t) t.textContent = es ? 'Terminó todas las lecciones.' : 'You have finished every lesson.';
