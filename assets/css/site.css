@@ -1466,3 +1466,5 @@ details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
 .qx-step.qx-wrong .qx-step-t::after, .qx-row.qx-wrong .qx-issue::after { content: " ✗"; }
 .qx-src { font-size: .95rem; color: var(--muted); }
 .qx [hidden] { display: none !important; }
+/* Homepage: site name as the heading, tagline below it */
+.pt-tag { font-family: var(--font-display); font-size: clamp(1.15rem, 4.2vw, 1.5rem); line-height: 1.2; margin: 0 0 var(--sp-2); }
