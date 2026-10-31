@@ -610,6 +610,7 @@
 (function () {
   var boxes = document.querySelectorAll('[data-qx]');
   if (!boxes.length) return;
+  var es = (document.documentElement.lang || '').indexOf('es') === 0; // Spanish final quiz (Oct 30, 2026)
   Array.prototype.forEach.call(boxes, function (box) {
     var kind = box.getAttribute('data-qx');
     var fb = box.querySelector('[data-qm-fb]'), ans = box.querySelector('details.qm-ans');
@@ -634,7 +635,7 @@
         else if (dir > 0 && li.nextElementSibling) list.insertBefore(li.nextElementSibling, li);
         refresh();
         var pos = steps().indexOf(li) + 1;
-        if (fb) fb.textContent = 'Moved "' + stepText(li) + '" to step ' + pos + ' of ' + steps().length + '.';
+        if (fb) fb.textContent = es ? 'Movió "' + stepText(li) + '" al paso ' + pos + ' de ' + steps().length + '.' : 'Moved "' + stepText(li) + '" to step ' + pos + ' of ' + steps().length + '.';
         var again = li.querySelector('.qx-mv[data-mv="' + dir + '"]');
         (again && !again.disabled ? again : li.querySelector('.qx-mv:not([disabled])')).focus();
       });
@@ -644,7 +645,7 @@
       var good = 0, total = 0;
       if (kind === 'order') {
         steps().forEach(function (li, i) { total++; var ok = +li.getAttribute('data-i') === i; if (ok) good++; li.classList.add(ok ? 'qx-right' : 'qx-wrong'); });
-        if (fb) fb.textContent = good === total ? 'Right! That is the correct order.' : 'Not quite. ' + good + ' of ' + total + ' steps are in the right place. The right order is: ' +
+        if (fb) fb.textContent = good === total ? (es ? '¡Correcto! Ese es el orden correcto.' : 'Right! That is the correct order.') : (es ? 'No exactamente. ' + good + ' de ' + total + ' pasos están en su lugar. El orden correcto es: ' : 'Not quite. ' + good + ' of ' + total + ' steps are in the right place. The right order is: ') +
           steps().slice().sort(function (a, b) { return a.getAttribute('data-i') - b.getAttribute('data-i'); }).map(function (li, i) { return (i + 1) + '. ' + stepText(li); }).join(' ');
       } else {
         var blank = 0;
@@ -653,12 +654,29 @@
           if (!s.value) { blank++; return; }
           var ok = s.value === s.getAttribute('data-ans'); if (ok) good++; row.classList.add(ok ? 'qx-right' : 'qx-wrong');
         });
-        if (blank) { if (fb) fb.textContent = 'Choose an answer for every row first (' + blank + ' left).'; return; }
-        if (fb) fb.textContent = good === total ? 'Right! All ' + total + ' match.' : 'Not quite. ' + good + ' of ' + total + ' are right. ' +
+        if (blank) { if (fb) fb.textContent = es ? 'Primero elija una respuesta en cada fila (faltan ' + blank + ').' : 'Choose an answer for every row first (' + blank + ' left).'; return; }
+        if (fb) fb.textContent = good === total ? (es ? '¡Correcto! Las ' + total + ' coinciden.' : 'Right! All ' + total + ' match.') : (es ? 'No exactamente. ' + good + ' de ' + total + ' están bien. ' : 'Not quite. ' + good + ' of ' + total + ' are right. ') +
           Array.prototype.map.call(box.querySelectorAll('.qx-row'), function (r) { return r.querySelector('.qx-issue').textContent + ': ' + r.querySelector('.qx-sel').getAttribute('data-ans') + '.'; }).join(' ');
       }
       box.classList.add('qm-done');
       if (ans) ans.open = true;
     });
+  });
+})();
+
+// "Who decides?" lookup filter (Oct 30, 2026). Without JavaScript the full table shows and the filter stays hidden.
+(function () {
+  var box = document.querySelector('[data-wd-filter]');
+  if (!box) return;
+  var es = (document.documentElement.lang || '').indexOf('es') === 0;
+  var input = box.querySelector('input'), status = box.querySelector('[role="status"]');
+  var rows = Array.prototype.slice.call(document.querySelectorAll('[data-wd-row]'));
+  var norm = function (t) { return (t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); };
+  var hay = rows.map(function (r) { return norm(r.textContent + ' ' + r.getAttribute('data-k')); });
+  box.hidden = false;
+  input.addEventListener('input', function () {
+    var words = norm(input.value).split(/\s+/).filter(Boolean), shown = 0;
+    rows.forEach(function (r, i) { var ok = words.every(function (w) { return hay[i].indexOf(w) !== -1; }); r.hidden = !ok; if (ok) shown++; });
+    status.textContent = words.length ? (es ? shown + ' de ' + rows.length + ' temas' : shown + ' of ' + rows.length + ' issues') : '';
   });
 })();

@@ -1468,3 +1468,54 @@ details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
 .qx [hidden] { display: none !important; }
 /* Homepage: site name as the heading, tagline below it */
 .pt-tag { font-family: var(--font-display); font-size: clamp(1.15rem, 4.2vw, 1.5rem); line-height: 1.2; margin: 0 0 var(--sp-2); }
+
+/* ---------- Oct 30, 2026: homepage order, tap targets, citation chips, new pages ---------- */
+/* Meeting card stands alone now that "Start here" sits right under it */
+@media (min-width: 64rem) { .pt-now.pt-now-solo { grid-template-columns: minmax(0, 1fr); } }
+.pt-speak { margin: var(--sp-3) 0 0; max-width: none; }
+.pt-card .btn.pt-speak-btn { display: flex; width: 100%; max-width: none; margin-top: 0; justify-content: center; }
+@media (min-width: 40rem) { .pt-doors { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 64rem) { .pt-doors { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+/* Tap targets: links and buttons at least 44px tall (padding grows the hit area; negative margins keep the layout) */
+.brand { min-height: 44px; }
+.banner a { display: inline-block; padding: 15px 0; margin: -15px 0; }
+.footer-nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.footer-fine a { display: inline-block; padding: 14px 0; margin: -14px 0; }
+.page-home .pt-arch-c a { display: inline-block; padding: 15px 0; margin: -15px 0; }
+.page-home .pt-confirm a, .page-home .rule-behind a, .page-home .pt-legend a { display: inline-block; padding: 13px 0; margin: -13px 0; }
+.page-home .pt-confirm { line-height: 2; }
+.page-home .pt-door .card-link { display: block; padding: 10px 0; margin: -10px 0; }
+.page-home .pt-card h2 a { display: inline-block; padding: 8px 0; margin: -8px 0; }
+.page-home .cs-all { display: inline-flex; align-items: center; min-height: 44px; margin-right: .75rem; }
+.page-home .layer-name a { display: inline-block; padding: 9px 0; margin: -9px 0; }
+.page-home .kyr-a li a { display: inline-block; padding: 13px 0; margin: -13px 0; }
+.page-home .kyr-a li { margin: .7rem 0; }
+.page-home .cite { display: inline-flex; align-items: center; justify-content: center; min-width: 24px; padding: 0 2px; height: 44px; margin: -22px 0; vertical-align: baseline; }
+.page-home .ps-fold li a { display: inline-block; padding: 13px 0; margin: -13px 0; }
+
+/* Get it done and Take part: smaller chips, sources grouped at the end of a list or section */
+.page-get-it-done .claim, .page-take-part .claim { font-size: .6em; }
+.src-line { font-size: var(--fs-sm); color: var(--muted); margin: .4rem 0 1rem; }
+.src-line .claim { font-size: .85em; vertical-align: baseline; line-height: inherit; }
+
+/* Report a problem: quick table */
+.rp-quick { width: 100%; }
+.rp-quick td a { display: inline-block; padding: 10px 0; }
+
+/* Who decides? lookup */
+.wd-filter { margin: var(--sp-4) 0; }
+.wd-filter label { display: block; font-weight: 700; margin-bottom: .3rem; }
+.wd-filter input { width: 100%; max-width: 28rem; min-height: 44px; font: inherit; padding: .5rem .75rem; border: 1px solid var(--line-strong); border-radius: var(--radius-sm); background: var(--surface); color: var(--ink); }
+.wd-table caption { text-align: left; font-weight: 700; padding-bottom: .5rem; }
+@media (max-width: 39.99rem) { .prose .wd-table caption { display: block; width: auto; } }
+.wd-table th[scope="row"] { text-align: left; }
+.wd-table tr[hidden] { display: none !important; }
+.wd-table td a, .wd-table th a { display: inline-block; padding: 10px 0; margin: -6px 0; }
+
+/* Essentials track */
+.ess-list { list-style: none; padding: 0; margin: var(--sp-4) 0; display: grid; gap: var(--sp-3); }
+.ess-item { display: grid; gap: .25rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: var(--sp-4); }
+.ess-link { display: block; min-height: 44px; font-weight: 700; font-size: var(--fs-lg); }
+.ess-n { display: block; font-size: var(--fs-sm); color: var(--muted); font-weight: 650; }
+.ess-meta { color: var(--muted); }
