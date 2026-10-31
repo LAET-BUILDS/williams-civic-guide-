@@ -1415,7 +1415,8 @@ details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
 .pt-power-parts a:hover { border-color: var(--brand); }
 .page-home .pt-layers .layers-home { margin: var(--sp-2) 0 0; padding: var(--sp-3); box-shadow: none; background: transparent; border: 0; -webkit-backdrop-filter: none; backdrop-filter: none; }
 .page-home .pt-layers .layers-home figcaption { margin-bottom: var(--sp-2); }
-.page-home .search-btn .sb-label { display: inline; }
+/* Oct 31, 2026: home now shows the site name, so on phones Search is icon-only like inner pages; the word returns when there is room */
+@media (min-width: 30rem) { .page-home .search-btn .sb-label { display: inline; } }
 /* pt-core now holds one card per section (power moved below Know your rights, Oct 30, 2026) */
 
 /* Oct 30, 2026: visible "(en inglés)" on Spanish links that open English-only pages */
@@ -1521,8 +1522,7 @@ details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
 .ess-meta { color: var(--muted); }
 
 /* ===== r2 (Oct 30, 2026): bino-approved homepage cleanup. Everything below overrides earlier homepage rules. ===== */
-/* 1. Header: no logo anywhere; the homepage header has no name (the page heading carries it) */
-.header-home .search-btn { margin-left: auto; }
+/* 1. Header: no logo anywhere. Oct 31, 2026: the homepage header shows the site name too, like inner pages */
 .brand { gap: 0; }
 .brand-name { overflow: visible; text-overflow: clip; }
 @media (max-width: 23rem) { .brand { font-size: .95rem; } }
@@ -1587,3 +1587,9 @@ details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
 /* arch credit: no stray commas between source numbers */
 .page-home .pt-arch-src .cite-sep { display: none; }
 .page-home .pt-arch-src .cite + .cite { margin-left: .35em; }
+
+/* "What I've seen" (Oct 31, 2026): the site author's own view, styled as a quote so it never looks like a Key takeaways box */
+.prose .seen { margin: 0 0 var(--flow); padding: .2rem 0 .2rem 1.1rem; border-left: 3px solid var(--line-strong); background: none; box-shadow: none; font-style: italic; color: var(--ink); }
+.prose .seen > :last-child { margin-bottom: 0; }
+.prose .seen .seen-k { margin: 0 0 .35rem; font-family: var(--font); font-style: normal; font-size: .78rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.prose .seen .seen-k::before { content: "\201C"; margin-right: .3rem; font-size: 1.1rem; line-height: 0; vertical-align: -.15em; }
