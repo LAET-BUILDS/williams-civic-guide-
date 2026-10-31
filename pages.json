@@ -463,6 +463,12 @@
  },
  {
   "lang": "en",
+  "path": "council-votes/",
+  "title": "How the council voted",
+  "updated": "2026-10-31"
+ },
+ {
+  "lang": "en",
   "path": "documents/",
   "title": "Founding documents",
   "updated": "2026-10-29"
@@ -641,6 +647,13 @@
   "title": "Cómo llegan las constituciones al código de Williams",
   "updated": "2026-10-23",
   "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/council-votes/",
+  "title": "Cómo votó el Concejo",
+  "updated": "2026-10-31",
+  "review": "reviewed"
  },
  {
   "lang": "es",

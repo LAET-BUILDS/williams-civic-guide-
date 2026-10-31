@@ -1323,8 +1323,8 @@ details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
   html.js.menu-open .nav { display: block !important; }
 }
 @media (min-width: 64rem) {
-  .site-nav .nav { gap: .35rem; }
-  .nav a { font-size: .98rem; padding: 0 1rem; }
+  .site-nav .nav { gap: .2rem; } /* 9 sections since Oct 31, 2026 (How the council voted) */
+  .nav a { font-size: .95rem; padding: 0 .6rem; }
   .nav a[aria-current="true"] { background: var(--brand-soft); color: var(--brand); }
 }
 /* Footer: three labelled columns with every page */
