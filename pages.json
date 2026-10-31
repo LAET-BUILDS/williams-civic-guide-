@@ -501,7 +501,7 @@
   "lang": "en",
   "path": "power/",
   "title": "How power works in Williams",
-  "updated": "2026-10-29"
+  "updated": "2026-10-31"
  },
  {
   "lang": "en",
@@ -961,12 +961,12 @@
   "lang": "en",
   "path": "search/",
   "title": "Search this site",
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
  },
  {
   "lang": "es",
   "path": "es/search/",
   "title": "Buscar en este sitio",
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
  }
 ]
