@@ -181,6 +181,18 @@
  },
  {
   "lang": "en",
+  "path": "constitutions/essentials/",
+  "title": "The essentials: 5 lessons to start with",
+  "updated": "2026-10-30"
+ },
+ {
+  "lang": "en",
+  "path": "constitutions/final-quiz/",
+  "title": "Final quiz: The Constitution Course",
+  "updated": "2026-10-30"
+ },
+ {
+  "lang": "en",
   "path": "constitutions/how-it-fits/incorporation/",
   "title": "Incorporation: how the Bill of Rights came to bind the City of Williams",
   "updated": "2026-10-23"
@@ -499,6 +511,12 @@
  },
  {
   "lang": "en",
+  "path": "report-a-problem/",
+  "title": "Report a problem or file a complaint",
+  "updated": "2026-10-30"
+ },
+ {
+  "lang": "en",
   "path": "take-part/brown-act/",
   "title": "Brown Act (open meetings)",
   "updated": "2026-10-29"
@@ -520,6 +538,12 @@
   "path": "whats-new/",
   "title": "What's new",
   "updated": "2026-10-26"
+ },
+ {
+  "lang": "en",
+  "path": "who-decides/lookup/",
+  "title": "Who decides? Look up who makes the call in Williams",
+  "updated": "2026-10-30"
  },
  {
   "lang": "en",
@@ -581,6 +605,20 @@
   "path": "es/constitutions/cases/",
   "title": "Los casos detrás de los derechos y dónde leer los originales",
   "updated": "2026-10-29",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/essentials/",
+  "title": "Lo esencial: 5 lecciones para empezar",
+  "updated": "2026-10-30",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/final-quiz/",
+  "title": "Quiz final: el curso de la Constitución",
+  "updated": "2026-10-30",
   "review": "pending"
  },
  {
@@ -662,6 +700,13 @@
  },
  {
   "lang": "es",
+  "path": "es/report-a-problem/",
+  "title": "Reporte un problema o presente una queja",
+  "updated": "2026-10-30",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
   "path": "es/take-part/brown-act/",
   "title": "Ley Brown (reuniones abiertas)",
   "updated": "2026-10-29",
@@ -686,6 +731,13 @@
   "path": "es/whats-new/",
   "title": "Novedades",
   "updated": "2026-10-26",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/who-decides/lookup/",
+  "title": "¿Quién decide? Busque quién toma la decisión en Williams",
+  "updated": "2026-10-30",
   "review": "pending"
  },
  {
