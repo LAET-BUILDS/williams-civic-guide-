@@ -543,7 +543,7 @@
   "lang": "en",
   "path": "whats-new/",
   "title": "What's new",
-  "updated": "2026-10-26"
+  "updated": "2026-11-03"
  },
  {
   "lang": "en",
@@ -601,9 +601,163 @@
  },
  {
   "lang": "es",
+  "path": "es/constitutions/ca/article-1-criminal-justice/",
+  "title": "Artículo I de California (parte 3): los derechos en la justicia penal",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-1-liberty-equality/",
+  "title": "Artículo I de California (parte 1): libertad, privacidad e igualdad",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-1-property-and-more/",
+  "title": "Artículo I de California (parte 4): la propiedad, la pesca y el mapa completo de las secciones",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-1-speech-religion/",
+  "title": "Artículo I de California (parte 2): expresión, petición, gobierno abierto y religión",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-11/",
+  "title": "Artículo XI de California: el gobierno local, y por qué Williams puede regular",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-12/",
+  "title": "Artículo XII de California: los servicios públicos",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-13/",
+  "title": "Artículo XIII de California: los impuestos, las reglas básicas",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-13a/",
+  "title": "Artículo XIII A de California: la Proposición 13, el tope del 1% y las votaciones de dos tercios",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-13b/",
+  "title": "Artículo XIII B de California: el límite al gasto y los mandatos del estado",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-13c/",
+  "title": "Artículo XIII C de California: la aprobación de los votantes para los impuestos locales (Proposición 218)",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-13d/",
+  "title": "Artículo XIII D de California: las contribuciones y las cuotas relacionadas con la propiedad (Proposición 218)",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-16/",
+  "title": "Artículo XVI de California: las finanzas públicas, los límites a la deuda y la prohibición de regalar dinero público",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-18/",
+  "title": "Artículo XVIII de California: cómo se enmienda y se revisa la Constitución",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-2/",
+  "title": "Artículo II de California: voto, iniciativa, referéndum y destitución",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-20/",
+  "title": "Artículo XX de California: disposiciones varias, incluido el juramento que hace todo empleado de la ciudad",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-3/",
+  "title": "Artículo III de California: el Estado, la separación de poderes y quién puede negarse a aplicar una ley",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-4/",
+  "title": "Artículo IV de California: la Legislatura",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-5/",
+  "title": "Artículo V de California: el Poder Ejecutivo",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-6/",
+  "title": "Artículo VI de California: el Poder Judicial",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/article-7/",
+  "title": "Artículo VII de California: funcionarios y empleados públicos",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/articles-9-10/",
+  "title": "Artículos IX, X, X A y X B de California: la educación y el agua",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/ca/other-articles/",
+  "title": "Los demás artículos de California: trabajo, intereses, dinero para el transporte, redistribución de distritos, vivienda, células madre y artículos derogados",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
   "path": "es/constitutions/california/",
-  "title": "La Constitución de California: derechos, poder del pueblo y límites al dinero local",
-  "updated": "2026-10-29",
+  "title": "La Constitución de California: panorama y mapa del curso",
+  "updated": "2026-11-03",
   "review": "pending"
  },
  {
@@ -629,9 +783,303 @@
  },
  {
   "lang": "es",
+  "path": "es/constitutions/how-it-fits/incorporation/",
+  "title": "La incorporación: cómo la Carta de Derechos llegó a obligar a la Ciudad de Williams",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/how-it-fits/state-and-city/",
+  "title": "La ley estatal por encima de la ley de la ciudad: lo que puede y no puede hacer una ciudad de ley general",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/how-it-fits/statutes/",
+  "title": "De la constitución a la ley: las leyes que llevan sus derechos al Ayuntamiento",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/how-it-fits/supremacy/",
+  "title": "La supremacía: qué ley gana cuando chocan la ley federal, la estatal y la de la ciudad",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/how-it-fits/wmc-path/",
+  "title": "Un recorrido de ejemplo: de una sección del código de Williams hasta las dos constituciones",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
   "path": "es/constitutions/",
   "title": "Sus derechos: el curso de la Constitución",
   "updated": "2026-10-29",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-1/",
+  "title": "Primera Enmienda: religión, expresión, prensa, reunión y petición",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-10/",
+  "title": "Décima Enmienda: los poderes reservados a los estados y al pueblo",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-11/",
+  "title": "Undécima Enmienda: las demandas contra los estados",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-12/",
+  "title": "Duodécima Enmienda: votos electorales separados para Presidente y Vicepresidente",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-13/",
+  "title": "Decimotercera Enmienda: la abolición de la esclavitud",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-14/",
+  "title": "Decimocuarta Enmienda: ciudadanía, debido proceso e igual protección",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-15/",
+  "title": "Decimoquinta Enmienda: sin discriminación racial en el voto",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-16/",
+  "title": "Decimosexta Enmienda: el impuesto federal sobre la renta",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-17/",
+  "title": "Decimoséptima Enmienda: elección popular de los senadores",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-18/",
+  "title": "Decimoctava Enmienda: la Prohibición (derogada)",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-19/",
+  "title": "Decimonovena Enmienda: el derecho de las mujeres a votar",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-2/",
+  "title": "Segunda Enmienda: el derecho a poseer y portar armas",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-20/",
+  "title": "Vigésima Enmienda: los períodos empiezan en enero",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-21/",
+  "title": "Vigesimoprimera Enmienda: el fin de la Prohibición",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-22/",
+  "title": "Vigésima Segunda Enmienda: el límite de períodos presidenciales",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-23/",
+  "title": "Vigésima Tercera Enmienda: votos electorales para Washington, D.C.",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-24/",
+  "title": "Vigesimocuarta Enmienda: sin impuestos al voto en las elecciones federales",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-25/",
+  "title": "Vigésima Quinta Enmienda: la sucesión y la incapacidad presidencial",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-26/",
+  "title": "Vigesimosexta Enmienda: votar a los 18 años",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-27/",
+  "title": "Vigesimoséptima Enmienda: el sueldo del Congreso",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-3/",
+  "title": "Tercera Enmienda: no alojar soldados en las casas",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-4/",
+  "title": "Cuarta Enmienda: registros, incautaciones y órdenes judiciales",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-5/",
+  "title": "Quinta Enmienda: gran jurado, doble enjuiciamiento, autoincriminación, debido proceso y expropiaciones",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-6/",
+  "title": "Sexta Enmienda: los derechos del acusado en el juicio",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-7/",
+  "title": "Séptima Enmienda: juicio con jurado en casos civiles",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-8/",
+  "title": "Octava Enmienda: la fianza, las multas y los castigos",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/amendment-9/",
+  "title": "Novena Enmienda: los derechos que no están en la lista también son derechos",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/article-1-congress/",
+  "title": "Artículo I, Secciones 1–7: cómo se forma el Congreso y cómo un proyecto se convierte en ley",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/article-1-limits/",
+  "title": "Artículo I, Secciones 9–10: lo que el Congreso y los estados no pueden hacer",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/article-1-section-8/",
+  "title": "Artículo I, Sección 8: los poderes del Congreso",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/article-2/",
+  "title": "Artículo II: el Presidente y el poder ejecutivo",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/article-3/",
+  "title": "Artículo III: los tribunales federales",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/article-4/",
+  "title": "Artículo IV: cómo se tratan los estados entre sí",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/article-5/",
+  "title": "Artículo V: cómo se enmienda la Constitución",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/article-6/",
+  "title": "Artículo VI: la ley suprema del país",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/article-7/",
+  "title": "Artículo VII: la ratificación y cómo entró en vigor la Constitución",
+  "updated": "2026-11-03",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/constitutions/us/preamble/",
+  "title": "El Preámbulo: quién crea el gobierno y por qué",
+  "updated": "2026-11-03",
   "review": "pending"
  },
  {
@@ -645,7 +1093,7 @@
   "lang": "es",
   "path": "es/constitutions/williams/",
   "title": "Cómo llegan las constituciones al código de Williams",
-  "updated": "2026-10-23",
+  "updated": "2026-11-03",
   "review": "pending"
  },
  {
@@ -653,7 +1101,7 @@
   "path": "es/council-votes/",
   "title": "Cómo votó el Concejo",
   "updated": "2026-10-31",
-  "review": "reviewed"
+  "review": "pending"
  },
  {
   "lang": "es",
@@ -701,7 +1149,7 @@
   "lang": "es",
   "path": "es/power/",
   "title": "Cómo funciona el poder en Williams",
-  "updated": "2026-10-29",
+  "updated": "2026-10-31",
   "review": "pending"
  },
  {
@@ -743,7 +1191,7 @@
   "lang": "es",
   "path": "es/whats-new/",
   "title": "Novedades",
-  "updated": "2026-10-26",
+  "updated": "2026-11-03",
   "review": "pending"
  },
  {

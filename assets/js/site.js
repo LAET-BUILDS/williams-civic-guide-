@@ -540,21 +540,27 @@
       if (next && nx) {
         // r2 (Oct 30, 2026): before any progress, Start keeps its built link (the 5-lesson essentials page)
         if (done || seen) {
-          nx.href = base + next.p;
+          nx.href = base + (es && next.e ? 'es/' : '') + next.p;
           if (lab) lab.textContent = es ? 'Continuar' : 'Continue';
-          // Spanish: lesson titles are English, so name the lesson by number only and say it is in English
-          if (t) t.textContent = es ? (done + ' de ' + total + ' lecciones terminadas. Sigue: lección ' + next.n + ' (en inglés).') : (done + ' of ' + total + ' lessons done. Next: lesson ' + next.n + ', ' + next.t + '.');
-          if (what) what.textContent = ': ' + (es ? 'lección ' + next.n : 'Lesson ' + next.n + ', ' + next.t);
-          if (es && !nx.querySelector('.en-tag')) { var tag = document.createElement('span'); tag.className = 'en-tag'; tag.textContent = ' (en inglés)'; nx.appendChild(tag); }
+          // Spanish (Nov 3, 2026): a lesson with a Spanish page (e) is named by its Spanish title (te);
+          // one without is named by number only and marked as English
+          if (es && next.e) {
+            if (t) t.textContent = done + ' de ' + total + ' lecciones terminadas. Sigue: lección ' + next.n + ', ' + next.te + '.';
+            if (what) what.textContent = ': lección ' + next.n + ', ' + next.te;
+          } else {
+            if (t) t.textContent = es ? (done + ' de ' + total + ' lecciones terminadas. Sigue: lección ' + next.n + ' (en inglés).') : (done + ' of ' + total + ' lessons done. Next: lesson ' + next.n + ', ' + next.t + '.');
+            if (what) what.textContent = ': ' + (es ? 'lección ' + next.n : 'Lesson ' + next.n + ', ' + next.t);
+            if (es && !nx.querySelector('.en-tag')) { var tag = document.createElement('span'); tag.className = 'en-tag'; tag.textContent = ' (en inglés)'; nx.appendChild(tag); }
+          }
         }
       } else if (nx) {
         if (lab) lab.textContent = es ? 'Repasar' : 'Review';
         if (t) t.textContent = es ? 'Terminó todas las lecciones.' : 'You have finished every lesson.';
-        nx.href = base + (L[0] ? L[0].p : '');
+        nx.href = base + (L[0] ? (es && L[0].e ? 'es/' : '') + L[0].p : '');
       }
     } else if (next && nx) {
-      nx.href = base + next.p;
-      nx.textContent = (es ? 'Lección ' : 'Lesson ') + next.n + ': ' + next.t;
+      nx.href = base + (es && next.e ? 'es/' : '') + next.p;
+      nx.textContent = (es ? 'Lección ' : 'Lesson ') + next.n + ': ' + (es && next.e ? next.te : next.t);
       if (lab && (done || seen)) lab.textContent = es ? 'Siga con' : 'Continue with';
     } else if (row) {
       row.textContent = es ? 'Terminó todas las lecciones.' : 'You have finished every lesson.';
