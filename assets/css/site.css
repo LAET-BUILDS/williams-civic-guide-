@@ -1520,7 +1520,7 @@ details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
 .ess-n { display: block; font-size: var(--fs-sm); color: var(--muted); font-weight: 650; }
 .ess-meta { color: var(--muted); }
 
-/* ===== r2 (Oct 30, 2026): bino-approved homepage cleanup. Everything below overrides earlier homepage rules. ===== */
+/* ===== r2 (Oct 30, 2026): approved homepage cleanup. Everything below overrides earlier homepage rules. ===== */
 /* 1. Header: no logo anywhere; the homepage header has no name (the page heading carries it) */
 .brand { gap: 0; }
 .brand-name { overflow: visible; text-overflow: clip; }
@@ -1593,7 +1593,7 @@ details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
 .prose .seen .seen-k { margin: 0 0 .35rem; font-family: var(--font); font-style: normal; font-size: .78rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .prose .seen .seen-k::before { content: "\201C"; margin-right: .3rem; font-size: 1.1rem; line-height: 0; vertical-align: -.15em; }
 
-/* Homepage fixes (Oct 31, 2026, bino-approved) */
+/* Homepage fixes (Oct 31, 2026, approved) */
 /* 1. No name in the homepage top bar: Search becomes a wide search-field button that fills the left side, ES and the menu stay right */
 .header-home .search-btn { flex: 1 1 auto; justify-content: flex-start; margin-right: 0; padding: 0 1rem; color: var(--muted); background: var(--surface); box-shadow: inset 0 0 0 1.5px var(--line); }
 @media (min-width: 64rem) { .header-home .search-btn { flex: 0 1 30rem; margin-right: auto; } }
