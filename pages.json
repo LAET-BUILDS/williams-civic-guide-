@@ -1413,10 +1413,255 @@
   "updated": "2026-10-17"
  },
  {
+  "lang": "es",
+  "path": "es/documents/us-constitution/",
+  "title": "Constitución de EE. UU.",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-i/",
+  "title": "Constitución de CA, Art. I",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-ii/",
+  "title": "Constitución de CA, Art. II",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-iii/",
+  "title": "Constitución de CA, Art. III",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-iv/",
+  "title": "Constitución de CA, Art. IV",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-v/",
+  "title": "Constitución de CA, Art. V",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-vi/",
+  "title": "Constitución de CA, Art. VI",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-vii/",
+  "title": "Constitución de CA, Art. VII",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-ix/",
+  "title": "Constitución de CA, Art. IX",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-x/",
+  "title": "Constitución de CA, Art. X",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-x-a/",
+  "title": "Constitución de CA, Art. X A",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-x-b/",
+  "title": "Constitución de CA, Art. X B",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xi/",
+  "title": "Constitución de CA, Art. XI",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xii/",
+  "title": "Constitución de CA, Art. XII",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xiii/",
+  "title": "Constitución de CA, Art. XIII",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xiii-a/",
+  "title": "Constitución de CA, Art. XIII A",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xiii-b/",
+  "title": "Constitución de CA, Art. XIII B",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xiii-c/",
+  "title": "Constitución de CA, Art. XIII C",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xiii-d/",
+  "title": "Constitución de CA, Art. XIII D",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xiv/",
+  "title": "Constitución de CA, Art. XIV",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xv/",
+  "title": "Constitución de CA, Art. XV",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xvi/",
+  "title": "Constitución de CA, Art. XVI",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xviii/",
+  "title": "Constitución de CA, Art. XVIII",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xix/",
+  "title": "Constitución de CA, Art. XIX",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xix-a/",
+  "title": "Constitución de CA, Art. XIX A",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xix-b/",
+  "title": "Constitución de CA, Art. XIX B",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xix-c/",
+  "title": "Constitución de CA, Art. XIX C",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xix-d/",
+  "title": "Constitución de CA, Art. XIX D",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xx/",
+  "title": "Constitución de CA, Art. XX",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xxi/",
+  "title": "Constitución de CA, Art. XXI",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xxii/",
+  "title": "Constitución de CA, Art. XXII",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xxxiv/",
+  "title": "Constitución de CA, Art. XXXIV",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/article-xxxv/",
+  "title": "Constitución de CA, Art. XXXV",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/documents/ca-constitution/",
+  "title": "Constitución de California",
+  "updated": "2026-10-17",
+  "review": "pending"
+ },
+ {
   "lang": "en",
   "path": "agenda-watch/2026-10-21/",
   "title": "Council meeting 2026-10-21",
   "updated": "2026-10-28"
+ },
+ {
+  "lang": "es",
+  "path": "es/agenda-watch/2026-10-21/",
+  "title": "Reunión del Concejo 2026-10-21",
+  "updated": "2026-10-28",
+  "review": "pending"
  },
  {
   "lang": "en",

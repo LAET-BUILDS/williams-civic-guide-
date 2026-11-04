@@ -357,7 +357,8 @@
         var hit = !q || norm(p.textContent).indexOf(q) !== -1;
         p.classList.toggle('is-hidden', !hit); if (hit && q) n++;
       });
-      status.textContent = q ? (n + (n === 1 ? ' part matches' : ' parts match') + ' “' + input.value.trim() + '”. Clear the box to show everything.') : '';
+      var usEs = us.getAttribute('data-lang') === 'es';
+      status.textContent = q ? (usEs ? (n + (n === 1 ? ' parte coincide con' : ' partes coinciden con') + ' “' + input.value.trim() + '”. Borre la casilla para ver todo.') : (n + (n === 1 ? ' part matches' : ' parts match') + ' “' + input.value.trim() + '”. Clear the box to show everything.')) : '';
     }, 200);
     input.addEventListener('input', run);
   }
@@ -385,7 +386,7 @@
       }).catch(function () { cstat.textContent = M.fail; });
     }
     function label(x) {
-      if (x.d === 'us') return 'U.S. Constitution, ' + esc(x.a) + (x.l ? ', ' + esc(x.l) : '');
+      if (x.d === 'us') return (es ? 'Constitución de EE. UU., ' : 'U.S. Constitution, ') + esc(x.a) + (x.l ? ', ' + esc(x.l) : '');
       return 'Art. ' + esc(x.a) + ', ' + esc(x.l) + (x.c ? ': ' + esc(x.c) : '');
     }
     var crun = debounce(function () {
@@ -400,7 +401,7 @@
         hits.slice(0, 50).forEach(function (x) {
           var i = norm(x.t).indexOf(q2), snip = i >= 0 ? x.t.slice(Math.max(0, i - 60), i + q2.length + 80) : x.t.slice(0, 140);
           var li = document.createElement('li');
-          li.innerHTML = '<a href="' + base + x.p + '">' + (x.d === 'us' ? '' : (urls.length > 1 ? 'California Constitution, ' : '')) + label(x) + '</a><span class="snip" lang="en">…' + esc(snip) + '…</span>';
+          li.innerHTML = '<a href="' + base + x.p + '">' + (x.d === 'us' ? '' : (urls.length > 1 ? (es ? 'Constitución de California, ' : 'California Constitution, ') : '')) + label(x) + '</a><span class="snip" lang="' + (/-es\.json/.test(urls[0]) ? 'es' : 'en') + '">…' + esc(snip) + '…</span>';
           out.appendChild(li);
         });
       });
