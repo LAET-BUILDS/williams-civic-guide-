@@ -25,6 +25,54 @@
  },
  {
   "lang": "en",
+  "path": "city-records/numbers/checklist/",
+  "title": "Closing checklist: five questions for any promise (draft)",
+  "updated": "2026-11-09"
+ },
+ {
+  "lang": "en",
+  "path": "city-records/numbers/funds-and-reserves/",
+  "title": "Lesson 2: Funds, reserves and deficits (draft)",
+  "updated": "2026-11-09"
+ },
+ {
+  "lang": "en",
+  "path": "city-records/numbers/",
+  "title": "The numbers behind the promise (draft)",
+  "updated": "2026-11-09"
+ },
+ {
+  "lang": "en",
+  "path": "city-records/numbers/one-time-or-ongoing/",
+  "title": "Lesson 3: One-time money or ongoing money? (draft)",
+  "updated": "2026-11-09"
+ },
+ {
+  "lang": "en",
+  "path": "city-records/numbers/per-person-per-household/",
+  "title": "Lesson 6: Per household or per person? (draft)",
+  "updated": "2026-11-09"
+ },
+ {
+  "lang": "en",
+  "path": "city-records/numbers/rates-and-fees/",
+  "title": "Lesson 5: Rates and fees, prices as signals (draft)",
+  "updated": "2026-11-09"
+ },
+ {
+  "lang": "en",
+  "path": "city-records/numbers/tax-promise/",
+  "title": "Lesson 4: What a tax promise really costs (draft)",
+  "updated": "2026-11-09"
+ },
+ {
+  "lang": "en",
+  "path": "city-records/numbers/where-money-comes-from/",
+  "title": "Lesson 1: Where city money comes from (draft)",
+  "updated": "2026-11-09"
+ },
+ {
+  "lang": "en",
   "path": "city-records/ordinances/",
   "title": "Ordinances and resolutions, 2024 to 2026",
   "updated": "2026-10-23"
@@ -583,6 +631,62 @@
   "path": "es/city-records/",
   "title": "Registros de la ciudad en palabras sencillas",
   "updated": "2026-10-29",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/city-records/numbers/checklist/",
+  "title": "Lista de cierre: cinco preguntas para cualquier promesa (borrador)",
+  "updated": "2026-11-09",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/city-records/numbers/funds-and-reserves/",
+  "title": "Lección 2: Fondos, reservas y déficits (borrador)",
+  "updated": "2026-11-09",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/city-records/numbers/",
+  "title": "Los números detrás de la promesa (borrador)",
+  "updated": "2026-11-09",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/city-records/numbers/one-time-or-ongoing/",
+  "title": "Lección 3: ¿Dinero de una sola vez o continuo? (borrador)",
+  "updated": "2026-11-09",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/city-records/numbers/per-person-per-household/",
+  "title": "Lección 6: ¿Por hogar o por persona? (borrador)",
+  "updated": "2026-11-09",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/city-records/numbers/rates-and-fees/",
+  "title": "Lección 5: Tarifas y cargos, los precios como señales (borrador)",
+  "updated": "2026-11-09",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/city-records/numbers/tax-promise/",
+  "title": "Lección 4: Cuánto cuesta de verdad una promesa de impuesto (borrador)",
+  "updated": "2026-11-09",
+  "review": "pending"
+ },
+ {
+  "lang": "es",
+  "path": "es/city-records/numbers/where-money-comes-from/",
+  "title": "Lección 1: De dónde viene el dinero de la ciudad (borrador)",
+  "updated": "2026-11-09",
   "review": "pending"
  },
  {
@@ -1667,12 +1771,12 @@
   "lang": "en",
   "path": "search/",
   "title": "Search this site",
-  "updated": "2026-11-03"
+  "updated": "2026-11-09"
  },
  {
   "lang": "es",
   "path": "es/search/",
   "title": "Buscar en este sitio",
-  "updated": "2026-11-03"
+  "updated": "2026-11-09"
  }
 ]
