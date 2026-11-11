@@ -608,7 +608,7 @@
         if (inp.hasAttribute('data-ok')) l.classList.add('qm-right');
         if (inp === r) l.classList.add('qm-picked', ok ? 'qm-right' : 'qm-wrong');
       });
-      box.classList.add('qm-done');
+      box.classList.add('qm-done'); box.setAttribute('data-fq', ok ? '1' : '0'); // final quiz tally (Nov 10, 2026)
       if (fb) fb.textContent = ok ? (es ? '¡Correcto!' : 'Right!') : ((es ? 'No exactamente. La respuesta correcta es: ' : 'Not quite. The right answer is: ') + box.getAttribute('data-qm-right'));
       if (ans) ans.open = true;
     });
@@ -668,10 +668,29 @@
         if (fb) fb.textContent = good === total ? (es ? '¡Correcto! Las ' + total + ' coinciden.' : 'Right! All ' + total + ' match.') : (es ? 'No exactamente. ' + good + ' de ' + total + ' están bien. ' : 'Not quite. ' + good + ' of ' + total + ' are right. ') +
           Array.prototype.map.call(box.querySelectorAll('.qx-row'), function (r) { return r.querySelector('.qx-issue').textContent + ': ' + r.querySelector('.qx-sel').getAttribute('data-ans') + '.'; }).join(' ');
       }
-      box.classList.add('qm-done');
+      box.classList.add('qm-done'); box.setAttribute('data-fq', good === total ? '1' : '0'); // final quiz tally (Nov 10, 2026)
       if (ans) ans.open = true;
     });
   });
+})();
+
+// Final quiz surprise card (Nov 10, 2026): 20 or more of the 25 questions right reveals a link card under the quiz.
+// The unlock is remembered in localStorage only (this browser; nothing is sent). The card is hidden without JavaScript.
+(function () {
+  var quiz = document.querySelector('.final-quiz'), card = document.querySelector('[data-fq-egg]');
+  if (!quiz || !card) return;
+  var KEY = 'wcg-econ-egg-v1', need = parseInt(card.getAttribute('data-fq-need'), 10) || 20, ls = null;
+  try { ls = window.localStorage; ls.getItem(KEY); } catch (e) { ls = null; }
+  if (ls && ls.getItem(KEY) === '1') card.hidden = false;
+  function tally() {
+    if (!card.hidden) return;
+    if (quiz.querySelectorAll('[data-fq="1"]').length >= need) {
+      card.hidden = false;
+      if (ls) { try { ls.setItem(KEY, '1'); } catch (e) { /* storage blocked: card still shows this visit */ } }
+    }
+  }
+  quiz.addEventListener('change', tally);
+  quiz.addEventListener('click', tally);
 })();
 
 // "Who decides?" lookup filter (Oct 30, 2026). Without JavaScript the full table shows and the filter stays hidden.
