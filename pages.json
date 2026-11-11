@@ -63,7 +63,7 @@
   "lang": "en",
   "path": "city-records/numbers/tax-promise/",
   "title": "Lesson 4: What a tax promise really costs (draft)",
-  "updated": "2026-11-09"
+  "updated": "2026-11-10"
  },
  {
   "lang": "en",
@@ -679,7 +679,7 @@
   "lang": "es",
   "path": "es/city-records/numbers/tax-promise/",
   "title": "Lección 4: Cuánto cuesta de verdad una promesa de impuesto (borrador)",
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "review": "pending"
  },
  {
@@ -1771,12 +1771,12 @@
   "lang": "en",
   "path": "search/",
   "title": "Search this site",
-  "updated": "2026-11-10"
+  "updated": "2026-11-11"
  },
  {
   "lang": "es",
   "path": "es/search/",
   "title": "Buscar en este sitio",
-  "updated": "2026-11-10"
+  "updated": "2026-11-11"
  }
 ]
