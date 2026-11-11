@@ -1610,3 +1610,44 @@ details.kyr-sec > ul { margin: .25rem 0 .5rem; padding: 0 .75rem 0 1.9rem; }
 .page-home .course-strip { position: relative; isolation: isolate; overflow: hidden; padding-bottom: 4.5rem; }
 .page-home .course-strip::after { content: ""; position: absolute; inset: auto 0 0 0; height: 4rem; background: var(--hero-art) center bottom / cover no-repeat; z-index: -1; pointer-events: none; }
 @media (min-width: 64rem) { .page-home .course-strip { padding-bottom: 6.5rem; } .page-home .course-strip::after { height: 6rem; } }
+
+/* ========== Nov 10, 2026: final-quiz surprise card ========== */
+.fq-egg { margin: var(--sp-5, 1.5rem) 0 0; padding: .85rem 1.1rem; background: var(--olive); border-radius: var(--radius-sm); box-shadow: inset 4px 0 0 var(--brand); }
+.fq-egg[hidden] { display: none; }
+.fq-egg p { margin: 0; }
+.fq-egg .fq-egg-t { font-size: 1.0625rem; }
+.fq-egg .fq-egg-n { margin-top: .25rem; color: var(--muted); }
+
+/* ========== Nov 10, 2026: valley flair, economics section only (city-records/numbers/, all 8 pages EN + ES) ==========
+ * Scoped by the body class (page-city-records-numbers, page-city-records-numbers-<lesson>).
+ * Colors: dry grass and rice green, both >= 4.5:1 on the page backgrounds in light and dark mode. */
+body[class*="page-city-records-numbers"] {
+  --econ-grass: #7a5a10; --econ-rice: #3d6a2a; --econ-furrow: #7a5a10;
+}
+@media (prefers-color-scheme: dark) {
+  body[class*="page-city-records-numbers"] { --econ-grass: #e0c77a; --econ-rice: #a9d58a; --econ-furrow: #e0c77a; }
+}
+/* 1) a thin, faded strip of the existing valley art under the section title (replaces the header's corner strip on these pages) */
+body[class*="page-city-records-numbers"] .page-head { padding-bottom: var(--sp-5); }
+body[class*="page-city-records-numbers"] .page-head::after { content: none; }
+body[class*="page-city-records-numbers"] .page-head h1::after {
+  content: ""; display: block; height: 1.75rem; margin-top: .65rem; opacity: .6; pointer-events: none;
+  background: var(--motif) left bottom / auto 100% repeat-x;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 72%, transparent 100%); mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 72%, transparent 100%);
+}
+/* 2) lesson numbers in dry grass; the numbered list of lessons in rice green */
+body[class*="page-city-records-numbers"] .lesson-n { color: var(--econ-grass); }
+body.page-city-records-numbers .prose ol > li::marker { color: var(--econ-rice); font-weight: 700; }
+/* 3) faint furrow lines above section headings and on dividers */
+body[class*="page-city-records-numbers"] {
+  --econ-furrow-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='8' viewBox='0 0 60 8'%3E%3Cg fill='none' stroke='%23000' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M0 1 Q15 -1 30 1 T60 1'/%3E%3Cpath d='M0 4 Q15 2 30 4 T60 4'/%3E%3Cpath d='M0 7 Q15 5 30 7 T60 7'/%3E%3C/g%3E%3C/svg%3E");
+}
+body[class*="page-city-records-numbers"] .prose h2::before {
+  content: ""; display: block; height: 8px; margin-bottom: .55rem; opacity: .32; background: var(--econ-furrow);
+  -webkit-mask: var(--econ-furrow-mask) left center / 60px 8px repeat-x; mask: var(--econ-furrow-mask) left center / 60px 8px repeat-x;
+}
+body[class*="page-city-records-numbers"] .prose hr {
+  border: 0; height: 8px; margin: 2rem 0; opacity: .32; background: var(--econ-furrow);
+  -webkit-mask: var(--econ-furrow-mask) left center / 60px 8px repeat-x; mask: var(--econ-furrow-mask) left center / 60px 8px repeat-x;
+}
+@media print { body[class*="page-city-records-numbers"] .page-head h1::after, body[class*="page-city-records-numbers"] .prose h2::before, body[class*="page-city-records-numbers"] .prose hr { display: none; } }
