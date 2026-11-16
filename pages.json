@@ -75,7 +75,7 @@
   "lang": "en",
   "path": "city-records/ordinances/",
   "title": "Ordinances and resolutions, 2024 to 2026",
-  "updated": "2026-10-23"
+  "updated": "2026-11-16"
  },
  {
   "lang": "en",
@@ -1756,6 +1756,19 @@
  },
  {
   "lang": "en",
+  "path": "agenda-watch/2026-11-18/",
+  "title": "Council meeting 2026-11-18",
+  "updated": "2026-11-16"
+ },
+ {
+  "lang": "es",
+  "path": "es/agenda-watch/2026-11-18/",
+  "title": "Reunión del Concejo 2026-11-18",
+  "updated": "2026-11-16",
+  "review": "pending"
+ },
+ {
+  "lang": "en",
   "path": "agenda-watch/2026-10-21/",
   "title": "Council meeting 2026-10-21",
   "updated": "2026-10-28"
@@ -1771,12 +1784,12 @@
   "lang": "en",
   "path": "search/",
   "title": "Search this site",
-  "updated": "2026-11-12"
+  "updated": "2026-11-16"
  },
  {
   "lang": "es",
   "path": "es/search/",
   "title": "Buscar en este sitio",
-  "updated": "2026-11-12"
+  "updated": "2026-11-16"
  }
 ]
