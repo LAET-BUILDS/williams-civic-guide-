@@ -1653,3 +1653,14 @@ body[class*="page-city-records-numbers"] .prose hr {
   -webkit-mask: var(--econ-furrow-mask) left center / 60px 8px repeat-x; mask: var(--econ-furrow-mask) left center / 60px 8px repeat-x;
 }
 @media print { body[class*="page-city-records-numbers"] .page-head h1::after, body[class*="page-city-records-numbers"] .prose h2::before, body[class*="page-city-records-numbers"] .prose hr { display: none; } }
+/* Nov 19, 2026 (T19): home "What the council decided" list, one shape for every item.
+   Title, one meta line (status + tag), then an optional compact lesson line at the same left edge and size.
+   Scoped to .pt-hl so Lesson boxes on agenda and City records pages keep their boxed look.
+   Root cause of the extra gap under the old box: the home card sits inside .prose, so
+   ".prose .rule-behind { margin: -.25rem 0 var(--sp-4) }" (meant for City records headings) added 16px below it. */
+.pt-hl .rule-behind.pt-hl-l { display: block; margin: .35rem 0 0; padding: 0; border: 0; border-radius: 0; background: none; font-size: var(--fs-sm); line-height: inherit; }
+.pt-hl .rule-behind.pt-hl-l .rb-ico { display: inline-block; vertical-align: -.15em; margin-right: .25em; }
+.pt-hl .rule-behind.pt-hl-l .rb-k { margin-right: .15em; }
+/* one tag style on the home list; the text label still names the category */
+.pt-hl .flag { background: var(--surface-2); color: var(--ink); border-color: var(--line-strong); }
+.page-home .pt-hl .rule-behind.pt-hl-l a { display: inline; padding: 13px 0; margin: 0; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
