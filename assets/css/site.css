@@ -1658,7 +1658,7 @@ body[class*="page-city-records-numbers"] .prose hr {
    Scoped to .pt-hl so Lesson boxes on agenda and City records pages keep their boxed look.
    Root cause of the extra gap under the old box: the home card sits inside .prose, so
    ".prose .rule-behind { margin: -.25rem 0 var(--sp-4) }" (meant for City records headings) added 16px below it. */
-.pt-hl .rule-behind.pt-hl-l { display: block; margin: .35rem 0 0; padding: 0; border: 0; border-radius: 0; background: none; font-size: var(--fs-sm); line-height: inherit; }
+.pt-hl .rule-behind.pt-hl-l { margin: .5rem 0 0; }
 .pt-hl .rule-behind.pt-hl-l .rb-ico { display: inline-block; vertical-align: -.15em; margin-right: .25em; }
 .pt-hl .rule-behind.pt-hl-l .rb-k { margin-right: .15em; }
 /* one tag style on the home list; the text label still names the category */
